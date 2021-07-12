@@ -29,5 +29,7 @@ public class clapGame {
 				System.out.println(i);
 			}
 		}
+		
+		scanner.close();
 	}
 }
