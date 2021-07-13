@@ -11,6 +11,7 @@ public class MenuTest extends JFrame implements ActionListener, ItemListener {
 	private JMenuItem sbMenuItem1, sbMenuItem2;
 	private JRadioButtonMenuItem rbMenuItem1, rbMenuItem2;
 	private JCheckBoxMenuItem cbMenuItem1, cbMenuItem2;
+	private JButton button;
 
 	public MenuTest() {
 
@@ -74,13 +75,22 @@ public class MenuTest extends JFrame implements ActionListener, ItemListener {
 
 		// 메뉴바를 프레임에 부착한다.
 		setJMenuBar(menuBar);
+		
+		button = new JButton("눌러봐");
+		button.addActionListener(this);
+		
+		add(button);
 		setVisible(true);
 	}
 
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == menuItem1) {
 			JOptionPane.showMessageDialog(this, "메뉴 항목 1은 선택하면 안됩니다.", "함정", JOptionPane.ERROR_MESSAGE);
-
+		}
+		
+		if(e.getSource() == button) {
+			JOptionPane.showMessageDialog(this, "어흥", "사자 등장", JOptionPane.PLAIN_MESSAGE, new ImageIcon("./res/lion.png"));
+			button.setText("사자 왔다감");
 		}
 	}
 
@@ -90,7 +100,7 @@ public class MenuTest extends JFrame implements ActionListener, ItemListener {
 
 			String[] dessert = { "케이크", "초콜릿", "아이스크림", "과자", "사탕"};
 			System.out.println((String) JOptionPane.showInputDialog(this, "후식을 선택하세요.", "후식 주문", JOptionPane.PLAIN_MESSAGE,
-					new ImageIcon("./res/smile.png"), dessert, dessert[3]));
+					new ImageIcon("./res/smile.png"), dessert, dessert[3])); // 마지막 두번째: 배열(dessert)로 지정하면 선택, null 지정시 직접 입력
 
 		}
 	}
