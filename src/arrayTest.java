@@ -15,7 +15,7 @@ public class arrayTest {
 class MyFrame extends JFrame implements ActionListener {
 	JPanel panel1, panel2;
 	JLabel label;
-	JButton button;
+	JButton button1, button2;
 	JLabel[] labels;
 	int index = 0;
 	String[] string = { "¸¼À½", "ºñ", "Èå¸²", "´«" };
@@ -27,10 +27,15 @@ class MyFrame extends JFrame implements ActionListener {
 
 		panel1 = new JPanel();
 		label = new JLabel("¶óº§");
-		button = new JButton("¹öÆ°");
-		button.addActionListener(this);
+		button1 = new JButton("¹öÆ°1");
+		button1.addActionListener(this);
+		button1.setFocusPainted(false);
+		button2 = new JButton("¹öÆ°2");
+		button2.addActionListener(this);
+		button2.setFocusPainted(false);
 		panel1.add(label);
-		panel1.add(button);
+		panel1.add(button1);
+		panel1.add(button2);
 		panel1.setBackground(Color.GRAY);
 		add(panel1, BorderLayout.NORTH);
 
@@ -40,6 +45,7 @@ class MyFrame extends JFrame implements ActionListener {
 		labels = new JLabel[arrayTest.sizeMAX];
 		for (int i = 0; i < labels.length; i++) {
 			labels[i] = new JLabel(Integer.toString(i));
+			labels[i].setOpaque(true);
 			panel2.add(labels[i]);
 		}
 
@@ -50,11 +56,19 @@ class MyFrame extends JFrame implements ActionListener {
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		if (e.getSource() == button) {
+		if (e.getSource() == button1) {
 			System.out.println(index);
 			labels[(index % labels.length)].setText(string[(int) ((index / labels.length) % string.length)]);
+			labels[(index % labels.length)].setBackground(new Color((int) (Math.random() * 100) + 150,
+					(int) (Math.random() * 100) + 150, (int) (Math.random() * 100) + 150));
 			index++;
 		}
-
+		if (e.getSource() == button2) {
+			for (int i = 0; i < labels.length; i++) {
+				int color = (int) (Math.random() * 255);
+				labels[i].setText(Integer.toString(color));
+				labels[i].setBackground(new Color(color, 255, color));
+			}
+		}
 	}
 }
