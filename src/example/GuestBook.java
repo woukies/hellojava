@@ -29,6 +29,7 @@ class MyFrame extends JFrame implements ActionListener {
 
 		JLabel l1 = new JLabel("내용: ");
 		textField = new JTextField(15);
+		textField.addActionListener(this);
 		ok = new JButton("OK");
 		ok.addActionListener(this);
 		sum = new JLabel("0명");
@@ -54,7 +55,7 @@ class MyFrame extends JFrame implements ActionListener {
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		if (e.getSource() == ok) {
+		if (e.getSource() == ok || e.getSource() == textField) { // 엔터도 되네..
 			if (count >= SIZE) {
 				return;
 			}
