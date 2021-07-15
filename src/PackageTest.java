@@ -65,7 +65,9 @@ public class PackageTest {
 		calendar.set(2021, 6 - 1, 26);
 		int calendarMonth = calendar.get(Calendar.MONTH);
 
-		System.out.println((calendarMonth + 1) + "월"); // 요일 맞추려면?
+		//// /?/ 요일 맞추려면?
+
+		System.out.println((calendarMonth + 1) + "월");
 		for (int i = 0; i < randomRange; i++) { // calendar.get(Calendar.DAY_OF_MONTH)
 			calendar.add(Calendar.DATE, 1);
 			if (calendarMonth != calendar.get(Calendar.MONTH)) {
@@ -86,14 +88,22 @@ public class PackageTest {
 		System.out.println();
 		System.out.println();
 
-		String[] fruitString = { "사과", "배", "바나나", "자두", "참외", "사과" };
+		//// /?/ 중복을 제거하려면?
+
+		String[] fruitString = { "사과", "배", "바나나", "자두", "참외", "사과", "사과", "바나나" };
 		String[] splitString = new String[fruitString.length];
 		Arrays.sort(fruitString);
-		for (int i = 0; i < fruitString.length;) {
-			splitString[i] = fruitString[i];
+		for (int i = 0, j = 0; i < fruitString.length - 1; i++) {
+			splitString[j] = fruitString[i];
+			if (i != 0) {
+				if (!splitString[j].equals(fruitString[i - 1])) {
+					j++;
+				}
+			}
 		}
 
-		StringTokenizer st = new StringTokenizer(String.join(",", splitString), ","); // element = token, 빈칸 무시
+		StringTokenizer st = new StringTokenizer(String.join(",", splitString), ",");
+		// element = token, 빈칸 무시 (null은 아님)
 
 		while (st.hasMoreTokens()) {
 			System.out.println("countTokens() = " + st.countTokens() + ", nextToken() = " + st.nextToken());
