@@ -5,7 +5,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class arrayTest {
+public class ArrayTest {
 
 	final static int sizeMAX = 40;
 
@@ -44,7 +44,7 @@ class ArrayFrame extends JFrame implements ActionListener {
 		panel2 = new JPanel();
 		panel2.setLayout(new GridLayout(0, 4, 2, 2));
 
-		labels = new JLabel[arrayTest.sizeMAX];
+		labels = new JLabel[ArrayTest.sizeMAX];
 		for (int i = 0; i < labels.length; i++) {
 			labels[i] = new JLabel(Integer.toString(i));
 			labels[i].setOpaque(true);

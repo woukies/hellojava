@@ -2,7 +2,7 @@ package done;
 
 import java.util.Scanner;
 
-public class quizGame {
+public class QuizGame {
 
 	public static void main(String[] args) {
 		String[] quiz = { "1 + 1 = ", "1 - 1 = ", "1 * 1 = ", "1 / 1 = ", "1 % 1 = " };

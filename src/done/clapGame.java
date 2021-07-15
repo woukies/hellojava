@@ -3,7 +3,7 @@ package done;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class clapGame {
+public class ClapGame {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
