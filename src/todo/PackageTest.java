@@ -1,3 +1,5 @@
+package todo;
+
 import static java.lang.Math.*; // 정적 선언
 
 import java.text.SimpleDateFormat;

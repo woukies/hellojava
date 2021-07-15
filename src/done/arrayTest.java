@@ -1,3 +1,5 @@
+package done;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -8,11 +10,11 @@ public class arrayTest {
 	final static int sizeMAX = 40;
 
 	public static void main(String[] args) {
-		MyFrame frame = new MyFrame();
+		new ArrayFrame();
 	}
 }
 
-class MyFrame extends JFrame implements ActionListener {
+class ArrayFrame extends JFrame implements ActionListener {
 	JPanel panel1, panel2;
 	JLabel label;
 	JButton button1, button2;
@@ -20,7 +22,7 @@ class MyFrame extends JFrame implements ActionListener {
 	int index = 0;
 	String[] string = { "¸¼À½", "ºñ", "Èå¸²", "´«" };
 
-	MyFrame() {
+	ArrayFrame() {
 		setTitle("¶óº§");
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setSize(800, 600);

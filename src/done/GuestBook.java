@@ -1,4 +1,4 @@
-package example;
+package done;
 
 import javax.swing.*;
 import java.awt.*;
@@ -8,7 +8,7 @@ import java.awt.event.ActionListener;
 public class GuestBook {
 
 	public static void main(String[] args) {
-		new MyFrame();
+		new ArrayFrame();
 	}
 
 }
