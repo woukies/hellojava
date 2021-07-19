@@ -3,7 +3,7 @@ package helloWorld;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class cafeCalc {
+public class CafeCalc {
 
 	public static void main(String[] args) {
 		int inputNumber = 0;

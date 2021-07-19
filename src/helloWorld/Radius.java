@@ -2,7 +2,7 @@ package helloWorld;
 
 import java.util.Scanner;
 
-public class radius {
+public class Radius {
 
 	public static void main(String[] args) {
 		double radius;

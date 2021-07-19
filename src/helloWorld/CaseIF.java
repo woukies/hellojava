@@ -2,7 +2,7 @@ package helloWorld;
 
 import java.util.Scanner;
 
-public class caseIF {
+public class CaseIF {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		int age;

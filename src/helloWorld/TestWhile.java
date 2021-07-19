@@ -2,7 +2,7 @@ package helloWorld;
 
 import java.util.Scanner;
 
-public class testWhile {
+public class TestWhile {
 
 	public static void main(String[] args) {
 

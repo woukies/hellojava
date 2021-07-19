@@ -3,7 +3,7 @@ package helloWorld;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class _snail {
+public class _Snail {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);

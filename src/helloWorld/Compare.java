@@ -1,6 +1,6 @@
 package helloWorld;
 
-public class compare {
+public class Compare {
 
 	public static void main(String[] args) {
 		int num0 = 2;
