@@ -15,7 +15,7 @@ public class TaxiFare {
 		}
 
 		System.out.println("ÃÑ ¼öÀÔ: " + income);
-		
+
 		scanner.close();
 	}
 

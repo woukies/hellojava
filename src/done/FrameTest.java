@@ -1,4 +1,4 @@
-package test;
+package done;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -10,35 +10,35 @@ import javax.swing.*;
 public class FrameTest {
 
 	public static void main(String[] args) {
-		MyFrame frame = new MyFrame();
+		MyFrameTest frame = new MyFrameTest();
 	}
 
 }
 
-class MyFrame extends JFrame {
-	private MyPanel panel1;
+class MyFrameTest extends JFrame {
+	private MyPanelTest panel1;
 
-	public MyFrame() {
+	public MyFrameTest() {
 		// setTitle("Title");
 		super("Title");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setSize(1500, 800);
 
-		panel1 = new MyPanel();
+		panel1 = new MyPanelTest();
 		add(panel1);
 
 		setVisible(true);
 	}
 }
 
-class MyPanel extends JPanel implements ActionListener {
+class MyPanelTest extends JPanel implements ActionListener {
 	private int countButton = 0;
 	private JButton colorButton, numberButton;
 	public JButton addButton;
 	private JButton[] button = new JButton[200];
 	private JPanel centerPanel, northPanel;
 
-	public MyPanel() {
+	public MyPanelTest() {
 		setLayout(new BorderLayout());
 
 		northPanel = new JPanel();

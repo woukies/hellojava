@@ -40,5 +40,7 @@ public class Median {
 		}
 
 		System.out.println("중간 값은 " + median);
+		
+		scanner.close();
 	}
 }
