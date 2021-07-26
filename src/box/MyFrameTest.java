@@ -9,13 +9,13 @@ import javax.swing.*;
 public class MyFrameTest {
 
 	public static void main(String[] args) {
-		MyFrame1 f = new MyFrame1();
+		new FrameTestFrame();
 	}
 
 }
 
-class MyFrame1 extends JFrame {
-	public MyFrame1() {
+class FrameTestFrame extends JFrame {
+	public FrameTestFrame() {
 		Toolkit toolkit = Toolkit.getDefaultToolkit();
 		Dimension screenSize = toolkit.getScreenSize();
 		setSize(screenSize.width / 3, screenSize.height / 3);

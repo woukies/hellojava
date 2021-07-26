@@ -8,14 +8,14 @@ public class GridLayoutTest {
 
 	public static void main(String[] args) {
 
-		MyFrame3 f = new MyFrame3();
+		new GridLayoutFrame();
 
 	}
 
 }
 
-class MyFrame3 extends JFrame {
-	public MyFrame3() {
+class GridLayoutFrame extends JFrame {
+	public GridLayoutFrame() {
 		setTitle("GridLayoutTest");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setLayout(new GridLayout(4, 2, 2, 2)); // 초과시 행 기준
@@ -31,7 +31,7 @@ class MyFrame3 extends JFrame {
 		add(new JButton("버튼8"));
 		add(new JButton("버튼9"));
 
-		//pack(); // p316
+		// pack(); // p316
 		setVisible(true);
 	}
 }

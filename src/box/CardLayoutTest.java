@@ -6,15 +6,15 @@ import javax.swing.*;
 
 public class CardLayoutTest {
 	public static void main(String args[]) {
-		MyFrame4 f = new MyFrame4();
+		CardLayoutFrame f = new CardLayoutFrame();
 	}
 }
 
-class MyFrame4 extends JFrame implements ActionListener {
+class CardLayoutFrame extends JFrame implements ActionListener {
 	JPanel panel;
 	Cards cards;
 
-	public MyFrame4() {
+	public CardLayoutFrame() {
 		setTitle("CardLayoutTest");
 		setSize(400, 200);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

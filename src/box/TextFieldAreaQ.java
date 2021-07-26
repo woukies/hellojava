@@ -14,15 +14,15 @@ public class TextFieldAreaQ {
 		// 금액 익렵 텍스트 영역
 		// -> 버튼 누르면 3년 뒤 예금 이자 출력(연리 1.5%)
 
-		new BankFrame();
+		new TFABankFrame();
 	}
 
 }
 
-class DatePanel extends JPanel {
+class TFADatePanel extends JPanel {
 	private JFormattedTextField date;
 
-	public DatePanel() throws ParseException {
+	public TFADatePanel() throws ParseException {
 		setLayout(new GridLayout(0, 2, 2, 2));
 		add(new JLabel("Date: "));
 		MaskFormatter mf = new MaskFormatter("####/##/##");
@@ -36,11 +36,11 @@ class DatePanel extends JPanel {
 	}
 }
 
-class MoneyPanel extends JPanel implements ActionListener {
+class TFAMoneyPanel extends JPanel implements ActionListener {
 	private JTextField money;
 	private int moneyValue;
 
-	public MoneyPanel() {
+	public TFAMoneyPanel() {
 		setLayout(new GridLayout(0, 2, 2, 2));
 		add(new JLabel("Money: "));
 		money = new JTextField();
@@ -73,18 +73,18 @@ class ResultPanel extends JPanel {
 	}
 }
 
-class BankFrame extends JFrame implements ActionListener {
+class TFABankFrame extends JFrame implements ActionListener {
 	// private JFrame bankFrame;
-	private DatePanel datePanel;
-	private MoneyPanel moneyPanel;
+	private TFADatePanel datePanel;
+	private TFAMoneyPanel moneyPanel;
 	private ResultPanel interestPanel;
 
-	public BankFrame() throws Exception {
+	public TFABankFrame() throws Exception {
 		setSize(400, 200);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		datePanel = new DatePanel();
+		datePanel = new TFADatePanel();
 		// datePanel.addActionListener(this);
-		moneyPanel = new MoneyPanel();
+		moneyPanel = new TFAMoneyPanel();
 		// moneyPanel.addActionListener(this);
 		JPanel inputPanel = new JPanel();
 		inputPanel.setLayout(new GridLayout(2, 0, 2, 2));

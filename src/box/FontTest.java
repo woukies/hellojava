@@ -4,11 +4,11 @@ import javax.swing.*;
 import java.awt.event.*;
 import java.awt.*;
 
-class MyPanel3 extends JPanel {
+class FontPanel extends JPanel {
 
 	Font f1, f2, f3, f4, f5;
 
-	public MyPanel3() {
+	public FontPanel() {
 		f1 = new Font("Serif", Font.PLAIN, 20);
 		f2 = new Font("San Serif", Font.BOLD, 20);
 		f3 = new Font("Monospaced", Font.ITALIC, 20);
@@ -35,7 +35,7 @@ public class FontTest extends JFrame {
 		setSize(500, 200);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setTitle("Font Test");
-		JPanel panel = new MyPanelMouse();
+		JPanel panel = new FontPanel();
 		add(panel);
 		setVisible(true);
 	}

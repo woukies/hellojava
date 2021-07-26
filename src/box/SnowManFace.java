@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.event.*;
 import java.awt.*;
 
-class MyPanel1 extends JPanel {
+class SnowManPanel extends JPanel {
 
 
 	public void paintComponent(Graphics g) {
@@ -26,10 +26,10 @@ public class SnowManFace extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setTitle("´«»ç¶÷ ¾ó±¼");
 		setVisible(true);
-		add(new MyPanel1());
+		add(new SnowManPanel());
 	}
 
 	public static void main(String[] args) {
-		SnowManFace s = new SnowManFace();
+		new SnowManFace();
 	}
 }

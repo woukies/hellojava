@@ -7,14 +7,14 @@ public class BorderLayoutTest {
 
 	public static void main(String[] args) {
 
-		MyFrameNumbers f = new MyFrameNumbers();
+		new BorderLayoutFrame();
 
 	}
 
 }
 
-class MyFrameNumber extends JFrame {
-	public MyFrameNumber() {
+class BorderLayoutFrame extends JFrame {
+	public BorderLayoutFrame() {
 		setTitle("BorderLayoutTest");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setLayout(new BorderLayout(2, 2));

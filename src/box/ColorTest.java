@@ -4,12 +4,12 @@ import javax.swing.*;
 import java.awt.event.*;
 import java.awt.*;
 
-class MyPanel2 extends JPanel implements ActionListener {
+class ColorTestPanel extends JPanel implements ActionListener {
 	JButton button;
 	Color color = new Color(0, 0, 0);
 
 
-	public MyPanel2() {
+	public ColorTestPanel() {
 		setLayout(new BorderLayout());
 		button = new JButton("색상 변경");
 		button.addActionListener(this);
@@ -38,14 +38,14 @@ public class ColorTest extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setTitle("Color Test");
 		
-		JPanel panel = new MyPanelNumbers();
+		JPanel panel = new ColorTestPanel();
 		add(panel);
 		
 		setVisible(true);
 	}
 
 	public static void main(String[] args) {
-		ColorTest s = new ColorTest();
+		new ColorTest();
 	}
 
 }
