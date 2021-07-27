@@ -20,14 +20,12 @@ public class PasswordCheck {
 				break;
 			} else {
 				System.out.println("암호가 틀립니다");
+				if(trynumber == MAX_TRY) {
+					System.out.println("접속을 거부합니다");
+				}
 			}
-		}
-		
-		if(trynumber == MAX_TRY) {
-			System.out.println("접속을 거부합니다");
-		}
+		}		
 		
 		scanner.close();
 	}
-
 }
