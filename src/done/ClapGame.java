@@ -22,19 +22,19 @@ public class ClapGame {
 		}
 
 		for (int i = 1; i <= inputNumber; i++) {
-			//// 3ÀÇ ¹è¼ö
+			//// 3ì˜ ë°°ìˆ˜
 			// i % 3 == 0
 
-			//// 3,6,9 Æ÷ÇÔ
+			//// 3,6,9 í¬í•¨
 			// Integer.toString(i).contains("3") || Integer.toString(i).contains("6") ||
 			// Integer.toString(i).contains("9")
 
 			// Integer.toString(i).matches(".*(3|6|9).*")
 
 			if (i % 3 == 0 && i % 5 == 0) {
-				System.out.println("¼ö¹Ú");
+				System.out.println("ìˆ˜ë°•");
 			} else if (i % 3 == 0 || i % 5 == 0) {
-				System.out.println("¹Ú¼ö");
+				System.out.println("ë°•ìˆ˜");
 			} else {
 				System.out.println(i);
 			}

@@ -12,17 +12,17 @@ public class FileChooserTest extends JFrame implements ActionListener {
 	JPanel panelNorth, panelCenter;
 
 	public FileChooserTest() {
-		setTitle("ÆÄÀÏ ¼±ÅÃ±â Å×½ºÆ®");
+		setTitle("íŒŒì¼ ì„ íƒê¸° í…ŒìŠ¤íŠ¸");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setSize(300, 200);
 
 		fc = new JFileChooser();
 
-		textLabel = new JLabel("ÆÄÀÏ ¼±ÅÃ±â ÄÄÆ÷³ÍÆ® Å×½ºÆ®ÀÔ´Ï´Ù.");
-		openButton = new JButton("ÆÄÀÏ ¿ÀÇÂ");
+		textLabel = new JLabel("íŒŒì¼ ì„ íƒê¸° ì»´í¬ë„ŒíŠ¸ í…ŒìŠ¤íŠ¸ì…ë‹ˆë‹¤.");
+		openButton = new JButton("íŒŒì¼ ì˜¤í”ˆ");
 		openButton.addActionListener(this);
 
-		saveButton = new JButton("ÆÄÀÏ ÀúÀå");
+		saveButton = new JButton("íŒŒì¼ ì €ì¥");
 		saveButton.addActionListener(this);
 
 		panelNorth = new JPanel();
@@ -40,28 +40,28 @@ public class FileChooserTest extends JFrame implements ActionListener {
 
 	public void actionPerformed(ActionEvent e) {
 
-		// ¡°ÆÄÀÏ ¿ÀÇÂ¡±¹öÆ°¿¡ ´ëÇÑ ¾×¼Ç ÀÌº¥Æ® Ã³¸®
+		// â€œíŒŒì¼ ì˜¤í”ˆâ€ë²„íŠ¼ì— ëŒ€í•œ ì•¡ì…˜ ì´ë²¤íŠ¸ ì²˜ë¦¬
 		if (e.getSource() == openButton) {
 			fc.setCurrentDirectory(new File("D:\\springframework\\hello-world\\res"));
 			int returnVal = fc.showOpenDialog(this);
 
 			if (returnVal == JFileChooser.APPROVE_OPTION) {
-				// ½ÇÁ¦ ÆÄÀÏÀ» ¿ÀÇÂÇÑ´Ù.
+				// ì‹¤ì œ íŒŒì¼ì„ ì˜¤í”ˆí•œë‹¤.
 				File selectedFile = fc.getSelectedFile();
 				paintLabel.setIcon(new ImageIcon(selectedFile.getPath()));
 			} else {
-				// »ç¿ëÀÚ Ãë¼Ò
+				// ì‚¬ìš©ì ì·¨ì†Œ
 			}
 
-			// ¡°ÆÄÀÏ ÀúÀå¡±¹öÆ°¿¡ ´ëÇÑ ¾×¼Ç ÀÌº¥Æ® Ã³¸®
+			// â€œíŒŒì¼ ì €ì¥â€ë²„íŠ¼ì— ëŒ€í•œ ì•¡ì…˜ ì´ë²¤íŠ¸ ì²˜ë¦¬
 		} else if (e.getSource() == saveButton) {
 			int returnVal = fc.showSaveDialog(this);
 			if (returnVal == JFileChooser.APPROVE_OPTION) {
-				// ½ÇÁ¦ ÆÄÀÏ¿¡ ÀúÀåÇÑ´Ù.
+				// ì‹¤ì œ íŒŒì¼ì— ì €ì¥í•œë‹¤.
 				File selectedFile = fc.getSelectedFile();
 				System.out.println(selectedFile.getName());
 			} else {
-				// »ç¿ëÀÚ Ãë¼Ò
+				// ì‚¬ìš©ì ì·¨ì†Œ
 			}
 		}
 	}

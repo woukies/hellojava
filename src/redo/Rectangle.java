@@ -7,12 +7,12 @@ public class Rectangle {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		int xPoint, yPoint;
-		System.out.println("Á¡(x,y)ÀÇ ÁÂÇ¥¸¦ ÀÔ·ÂÇÏ½Ã¿À>>");
+		System.out.println("ì (x,y)ì˜ ì¢Œí‘œë¥¼ ìž…ë ¥í•˜ì‹œì˜¤>>");
 		xPoint = scanner.nextInt();
 		yPoint = scanner.nextInt();
 
-		System.out.printf("(%d, %d)´Â »ç°¢Çü ¾È¿¡ %s.\n", xPoint, yPoint,
-				(200 >= xPoint && xPoint >= 100 && 200 >= yPoint && yPoint >= 100) ? "ÀÖ½À´Ï´Ù" : "¾ø½À´Ï´Ù");
+		System.out.printf("(%d, %d)ëŠ” ì‚¬ê°í˜• ì•ˆì— %s.\n", xPoint, yPoint,
+				(200 >= xPoint && xPoint >= 100 && 200 >= yPoint && yPoint >= 100) ? "ìžˆìŠµë‹ˆë‹¤" : "ì—†ìŠµë‹ˆë‹¤");
 
 		scanner.close();
 	}

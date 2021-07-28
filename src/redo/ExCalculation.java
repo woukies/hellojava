@@ -7,17 +7,17 @@ public class ExCalculation {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 
-		System.out.print("2°³ÀÇ ½Ç¼ö ÀÔ·Â>>");
+		System.out.print("2ê°œì˜ ì‹¤ìˆ˜ ì…ë ¥>>");
 
 		double a, b;
 
 		a = scanner.nextDouble();
 		b = scanner.nextDouble();
 
-		System.out.println("µÎ ¼öÀÇ µ¡¼ÀÀº " + (a + b));
-		System.out.println("µÎ ¼öÀÇ »¬¼ÀÀº " + (a - b));
-		System.out.println("µÎ ¼öÀÇ °ö¼ÀÀº " + (a * b));
-		System.out.println("µÎ ¼öÀÇ ³ª´°¼ÀÀº " + (a / b));
+		System.out.println("ë‘ ìˆ˜ì˜ ë§ì…ˆì€ " + (a + b));
+		System.out.println("ë‘ ìˆ˜ì˜ ëº„ì…ˆì€ " + (a - b));
+		System.out.println("ë‘ ìˆ˜ì˜ ê³±ì…ˆì€ " + (a * b));
+		System.out.println("ë‘ ìˆ˜ì˜ ë‚˜ëˆ—ì…ˆì€ " + (a / b));
 
 		scanner.close();
 	}

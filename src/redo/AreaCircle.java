@@ -6,10 +6,10 @@ public class AreaCircle {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 
-		System.out.print("¹İÁö¸§À» ÀÔ·ÂÇÏ¼¼¿ä>> ");
+		System.out.print("ë°˜ì§€ë¦„ì„ ì…ë ¥í•˜ì„¸ìš”>> ");
 		int num = scanner.nextInt();
 		double circle = num * num * 3.14;
-		System.out.printf("¿øÀÇ ¸éÀûÀº %.1fÀÔ´Ï´Ù.", circle);
+		System.out.printf("ì›ì˜ ë©´ì ì€ %.1fì…ë‹ˆë‹¤.", circle);
 
 		scanner.close();
 	}

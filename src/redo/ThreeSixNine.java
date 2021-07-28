@@ -8,7 +8,7 @@ public class ThreeSixNine {
 		int inputNumber, count = 0;
 		int numOf1, numOf10;
 
-		System.out.print("10~99 »çÀÌÀÇ Á¤¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À>>");
+		System.out.print("10~99 ì‚¬ì´ì˜ ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì‹œì˜¤>>");
 		inputNumber = scanner.nextInt();
 
 		numOf1 = inputNumber % 10;
@@ -23,10 +23,10 @@ public class ThreeSixNine {
 
 		switch (count) {
 		case 1:
-			System.out.println("¹Ú¼öÂ¦");
+			System.out.println("ë°•ìˆ˜ì§");
 			break;
 		case 2:
-			System.out.println("¹Ú¼öÂ¦Â¦");
+			System.out.println("ë°•ìˆ˜ì§ì§");
 			break;
 		default:
 			System.out.println(inputNumber);

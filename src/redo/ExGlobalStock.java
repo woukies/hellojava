@@ -10,9 +10,9 @@ public class ExGlobalStock {
 		int purchaseAmount, saleAmount;
 		double transferTax;
 
-		System.out.print("¸Å¼ö ±İ¾×À» ÀÔ·ÂÇÏ¼¼¿ä: ");
+		System.out.print("ë§¤ìˆ˜ ê¸ˆì•¡ì„ ì…ë ¥í•˜ì„¸ìš”: ");
 		purchaseAmount = scanner.nextInt();
-		System.out.print("¸Åµµ ±İ¾×À» ÀÔ·ÂÇÏ¼¼¿ä: ");
+		System.out.print("ë§¤ë„ ê¸ˆì•¡ì„ ì…ë ¥í•˜ì„¸ìš”: ");
 		saleAmount = scanner.nextInt();
 
 		if (saleAmount > purchaseAmount) {
@@ -21,7 +21,7 @@ public class ExGlobalStock {
 			transferTax = 0;
 		}
 
-		System.out.println("¾çµµ¼¼ = " + transferTax);
+		System.out.println("ì–‘ë„ì„¸ = " + transferTax);
 
 		scanner.close();
 	}

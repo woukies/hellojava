@@ -8,7 +8,7 @@ public class Radius {
 		double radius;
 		double area;
 		Scanner input = new Scanner(System.in);
-		System.out.println("¹İÁö¸§?");
+		System.out.println("ë°˜ì§€ë¦„?");
 		radius = input.nextDouble();
 		input.close();
 		area = Math.PI * radius * radius;

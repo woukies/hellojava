@@ -13,12 +13,12 @@ class MyFrameRadio extends JFrame implements ActionListener {
 	private JPanel topPanel, sizePanel, resultPanel;
 
 	public MyFrameRadio() {
-		setTitle("¶óµğ¿À ¹öÆ° Å×½ºÆ®");
+		setTitle("ë¼ë””ì˜¤ ë²„íŠ¼ í…ŒìŠ¤íŠ¸");
 		setSize(300, 150);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 		topPanel = new JPanel();
-		JLabel label = new JLabel("¾î¶² Å©±âÀÇ Ä¿ÇÇ¸¦ ÁÖ¹®ÇÏ½Ã°Ú½À´Ï±î?");
+		JLabel label = new JLabel("ì–´ë–¤ í¬ê¸°ì˜ ì»¤í”¼ë¥¼ ì£¼ë¬¸í•˜ì‹œê² ìŠµë‹ˆê¹Œ?");
 		topPanel.add(label);
 		add(topPanel, BorderLayout.NORTH);
 
@@ -42,7 +42,7 @@ class MyFrameRadio extends JFrame implements ActionListener {
 		add(sizePanel, BorderLayout.CENTER);
 
 		resultPanel = new JPanel();
-		text = new JLabel("Å©±â°¡ ¼±ÅÃµÇÁö ¾Ê¾Ò½À´Ï´Ù.");
+		text = new JLabel("í¬ê¸°ê°€ ì„ íƒë˜ì§€ ì•Šì•˜ìŠµë‹ˆë‹¤.");
 		text.setForeground(Color.red);
 		resultPanel.add(text);
 		add(resultPanel, BorderLayout.SOUTH);
@@ -51,13 +51,13 @@ class MyFrameRadio extends JFrame implements ActionListener {
 
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == small) {
-			text.setText("Small Å©±â°¡ ¼±ÅÃµÇ¾ú½À´Ï´Ù.");
+			text.setText("Small í¬ê¸°ê°€ ì„ íƒë˜ì—ˆìŠµë‹ˆë‹¤.");
 		}
 		if (e.getSource() == medium) {
-			text.setText("Medium Å©±â°¡ ¼±ÅÃµÇ¾ú½À´Ï´Ù.");
+			text.setText("Medium í¬ê¸°ê°€ ì„ íƒë˜ì—ˆìŠµë‹ˆë‹¤.");
 		}
 		if (e.getSource() == large) {
-			text.setText("Large Å©±â°¡ ¼±ÅÃµÇ¾ú½À´Ï´Ù.");
+			text.setText("Large í¬ê¸°ê°€ ì„ íƒë˜ì—ˆìŠµë‹ˆë‹¤.");
 		}
 	}
 }

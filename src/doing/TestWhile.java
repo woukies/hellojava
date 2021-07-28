@@ -11,7 +11,7 @@ public class TestWhile {
 		Scanner scanner = new Scanner(System.in);
 
 		do {
-			System.out.print("¼ıÀÚ ÀÔ·Â(n < 0):");
+			System.out.print("ìˆ«ì ì…ë ¥(n < 0):");
 			num = scanner.nextInt();
 			boolean prime = false;
 			for (int i = 2; i <= num; i++) {
@@ -31,7 +31,7 @@ public class TestWhile {
 			System.out.println();
 		} while (num > 0);
 
-		System.out.println("Á¾·á");
+		System.out.println("ì¢…ë£Œ");
 		scanner.close();
 	}
 

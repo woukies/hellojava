@@ -10,11 +10,11 @@ public class ExExchange {
 
 		Scanner scanner = new Scanner(System.in);
 
-		System.out.print("¿øÈ­¸¦ ÀÔ·ÂÇÏ¼¼¿ä(´ÜÀ§ ¿ø)>>");
+		System.out.print("ì›í™”ë¥¼ ì…ë ¥í•˜ì„¸ìš”(ë‹¨ìœ„ ì›)>>");
 		int money = scanner.nextInt();
 
-		System.out.printf("%d¿øÀº $%.1fÀÔ´Ï´Ù..\n", money, money / rateDollar);
-		System.out.printf("%d¿øÀº E%.1fÀÔ´Ï´Ù..\n", money, money / rateEuro);
+		System.out.printf("%dì›ì€ $%.1fì…ë‹ˆë‹¤..\n", money, money / rateDollar);
+		System.out.printf("%dì›ì€ E%.1fì…ë‹ˆë‹¤..\n", money, money / rateEuro);
 
 		scanner.close();
 	}

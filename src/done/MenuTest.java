@@ -15,68 +15,68 @@ public class MenuTest extends JFrame implements ActionListener, ItemListener {
 
 	public MenuTest() {
 
-		// ¸Ş´º¹Ù¸¦ »ı¼ºÇÑ´Ù.
+		// ë©”ë‰´ë°”ë¥¼ ìƒì„±í•œë‹¤.
 		menuBar = new JMenuBar();
 
-		// Ã¹¹øÂ° ¸Å´º¸¦ »ı¼º
-		menu = new JMenu("Ã¹¹øÂ° ¸Ş´º");
+		// ì²«ë²ˆì§¸ ë§¤ë‰´ë¥¼ ìƒì„±
+		menu = new JMenu("ì²«ë²ˆì§¸ ë©”ë‰´");
 		menu.setMnemonic(KeyEvent.VK_F);
 		menuBar.add(menu);
 
-		// ¸Ş´º Ç×¸ñµéÀ» »ı¼º
-		menuItem1 = new JMenuItem("¸Ş´º Ç×¸ñ 1", KeyEvent.VK_1);
+		// ë©”ë‰´ í•­ëª©ë“¤ì„ ìƒì„±
+		menuItem1 = new JMenuItem("ë©”ë‰´ í•­ëª© 1", KeyEvent.VK_1);
 		menuItem1.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_M, ActionEvent.ALT_MASK));
 		menuItem1.addActionListener(this);
 		menu.add(menuItem1);
 
 		ImageIcon icon = new ImageIcon("icon.gif");
-		menuItem2 = new JMenuItem("¸Ş´º Ç×¸ñ 2", icon);
+		menuItem2 = new JMenuItem("ë©”ë‰´ í•­ëª© 2", icon);
 		menu.add(menuItem2);
 
-		// ¶óµğ¿À ¹öÆ° ¸Ş´º Ç×¸ñµéÀ» »ı¼ºÇÏ¿© ¸Ş´º¿¡ Ãß°¡
+		// ë¼ë””ì˜¤ ë²„íŠ¼ ë©”ë‰´ í•­ëª©ë“¤ì„ ìƒì„±í•˜ì—¬ ë©”ë‰´ì— ì¶”ê°€
 		menu.addSeparator();
 		ButtonGroup group = new ButtonGroup();
 
-		rbMenuItem1 = new JRadioButtonMenuItem("¶óµğ¿À ¹öÆ° ¸Ş´º Ç×¸ñ 1");
+		rbMenuItem1 = new JRadioButtonMenuItem("ë¼ë””ì˜¤ ë²„íŠ¼ ë©”ë‰´ í•­ëª© 1");
 		rbMenuItem1.setSelected(true);
 		group.add(rbMenuItem1);
 		menu.add(rbMenuItem1);
 
-		rbMenuItem2 = new JRadioButtonMenuItem("¶óµğ¿À ¹öÆ° ¸Ş´º Ç×¸ñ 2");
+		rbMenuItem2 = new JRadioButtonMenuItem("ë¼ë””ì˜¤ ë²„íŠ¼ ë©”ë‰´ í•­ëª© 2");
 		group.add(rbMenuItem2);
 		menu.add(rbMenuItem2);
 
-		// Ã¼Å© ¹Ú½º ¸Ş´º Ç×¸ñµéÀ» »ı¼ºÇÏ¿© ¸Ş´º¿¡ Ãß°¡
+		// ì²´í¬ ë°•ìŠ¤ ë©”ë‰´ í•­ëª©ë“¤ì„ ìƒì„±í•˜ì—¬ ë©”ë‰´ì— ì¶”ê°€
 		menu.addSeparator();
-		cbMenuItem1 = new JCheckBoxMenuItem("ÈÄ½Ä ÁÖ¹® Ç×¸ñ 1");
+		cbMenuItem1 = new JCheckBoxMenuItem("í›„ì‹ ì£¼ë¬¸ í•­ëª© 1");
 		cbMenuItem1.addItemListener(this);
 		menu.add(cbMenuItem1);
 
-		cbMenuItem2 = new JCheckBoxMenuItem("Ã¼Å© ¹Ú½º ¸Ş´º Ç×¸ñ 2");
+		cbMenuItem2 = new JCheckBoxMenuItem("ì²´í¬ ë°•ìŠ¤ ë©”ë‰´ í•­ëª© 2");
 		menu.add(cbMenuItem2);
 
-		// ¼­ºê ¸Ş´º »ı¼º
+		// ì„œë¸Œ ë©”ë‰´ ìƒì„±
 		menu.addSeparator();
-		submenu = new JMenu("¼­ºê ¸Ş´º");
+		submenu = new JMenu("ì„œë¸Œ ë©”ë‰´");
 		submenu.setMnemonic(KeyEvent.VK_S);
 
-		sbMenuItem1 = new JMenuItem("¼­ºê ¸Ş´º Ç×¸ñ 1");
+		sbMenuItem1 = new JMenuItem("ì„œë¸Œ ë©”ë‰´ í•­ëª© 1");
 		sbMenuItem1.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_1, ActionEvent.ALT_MASK));
 		submenu.add(sbMenuItem1);
 
-		sbMenuItem2 = new JMenuItem("¼­ºê ¸Ş´º Ç×¸ñ 2");
+		sbMenuItem2 = new JMenuItem("ì„œë¸Œ ë©”ë‰´ í•­ëª© 2");
 		submenu.add(sbMenuItem2);
 		menu.add(submenu);
 
-		// ¸Ş´º¹ÙÀÇ µÎ¹øÂ° ´º¸¦ ÀÛ¼ºÇÑ´Ù.
-		menu = new JMenu("µÎ¹øÂ° ¸Ş´º");
+		// ë©”ë‰´ë°”ì˜ ë‘ë²ˆì§¸ ë‰´ë¥¼ ì‘ì„±í•œë‹¤.
+		menu = new JMenu("ë‘ë²ˆì§¸ ë©”ë‰´");
 		menu.setMnemonic(KeyEvent.VK_S);
 		menuBar.add(menu);
 
-		// ¸Ş´º¹Ù¸¦ ÇÁ·¹ÀÓ¿¡ ºÎÂøÇÑ´Ù.
+		// ë©”ë‰´ë°”ë¥¼ í”„ë ˆì„ì— ë¶€ì°©í•œë‹¤.
 		setJMenuBar(menuBar);
 		
-		button = new JButton("´­·¯ºÁ");
+		button = new JButton("ëˆŒëŸ¬ë´");
 		button.addActionListener(this);
 		
 		add(button);
@@ -85,22 +85,22 @@ public class MenuTest extends JFrame implements ActionListener, ItemListener {
 
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == menuItem1) {
-			JOptionPane.showMessageDialog(this, "¸Ş´º Ç×¸ñ 1Àº ¼±ÅÃÇÏ¸é ¾ÈµË´Ï´Ù.", "ÇÔÁ¤", JOptionPane.ERROR_MESSAGE);
+			JOptionPane.showMessageDialog(this, "ë©”ë‰´ í•­ëª© 1ì€ ì„ íƒí•˜ë©´ ì•ˆë©ë‹ˆë‹¤.", "í•¨ì •", JOptionPane.ERROR_MESSAGE);
 		}
 		
 		if(e.getSource() == button) {
-			JOptionPane.showMessageDialog(this, "¾îÈï", "»çÀÚ µîÀå", JOptionPane.PLAIN_MESSAGE, new ImageIcon("./res/lion.png"));
-			button.setText("»çÀÚ ¿Ô´Ù°¨");
+			JOptionPane.showMessageDialog(this, "ì–´í¥", "ì‚¬ì ë“±ì¥", JOptionPane.PLAIN_MESSAGE, new ImageIcon("./res/lion.png"));
+			button.setText("ì‚¬ì ì™”ë‹¤ê°");
 		}
 	}
 
 	public void itemStateChanged(ItemEvent e) {
 		if (e.getSource() == cbMenuItem1) {
-			// Ã¼Å© ¹Ú½º ¸Ş´º Ç×¸ñ¿¡ ´ëÇÑ Ã³¸®
+			// ì²´í¬ ë°•ìŠ¤ ë©”ë‰´ í•­ëª©ì— ëŒ€í•œ ì²˜ë¦¬
 
-			String[] dessert = { "ÄÉÀÌÅ©", "ÃÊÄİ¸´", "¾ÆÀÌ½ºÅ©¸²", "°úÀÚ", "»çÅÁ"};
-			System.out.println((String) JOptionPane.showInputDialog(this, "ÈÄ½ÄÀ» ¼±ÅÃÇÏ¼¼¿ä.", "ÈÄ½Ä ÁÖ¹®", JOptionPane.PLAIN_MESSAGE,
-					new ImageIcon("./res/smile.png"), dessert, dessert[3])); // ¸¶Áö¸· µÎ¹øÂ°: ¹è¿­(dessert)·Î ÁöÁ¤ÇÏ¸é ¼±ÅÃ, null ÁöÁ¤½Ã Á÷Á¢ ÀÔ·Â
+			String[] dessert = { "ì¼€ì´í¬", "ì´ˆì½œë¦¿", "ì•„ì´ìŠ¤í¬ë¦¼", "ê³¼ì", "ì‚¬íƒ•"};
+			System.out.println((String) JOptionPane.showInputDialog(this, "í›„ì‹ì„ ì„ íƒí•˜ì„¸ìš”.", "í›„ì‹ ì£¼ë¬¸", JOptionPane.PLAIN_MESSAGE,
+					new ImageIcon("./res/smile.png"), dessert, dessert[3])); // ë§ˆì§€ë§‰ ë‘ë²ˆì§¸: ë°°ì—´(dessert)ë¡œ ì§€ì •í•˜ë©´ ì„ íƒ, null ì§€ì •ì‹œ ì§ì ‘ ì…ë ¥
 
 		}
 	}

@@ -9,10 +9,10 @@ public class Won2Dollar {
 
 		Scanner scanner = new Scanner(System.in);
 
-		System.out.print("¿øÈ­¸¦ ÀÔ·ÂÇÏ¼¼¿ä(´ÜÀ§ ¿ø)>>");
+		System.out.print("ì›í™”ë¥¼ ì…ë ¥í•˜ì„¸ìš”(ë‹¨ìœ„ ì›)>>");
 		int money = scanner.nextInt();
 
-		System.out.printf("%d¿øÀº $%.1fÀÔ´Ï´Ù..", money, money / rate);
+		System.out.printf("%dì›ì€ $%.1fì…ë‹ˆë‹¤..", money, money / rate);
 
 		scanner.close();
 	}

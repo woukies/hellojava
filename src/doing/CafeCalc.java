@@ -13,10 +13,10 @@ public class CafeCalc {
 		do {
 			i = 1;
 			try {
-				System.out.println("±¸±¸´Ü ÀÔ·Â: ");
+				System.out.println("êµ¬êµ¬ë‹¨ ì…ë ¥: ");
 				inputNumber = inputData.nextInt();
 			} catch (InputMismatchException e) {
-				System.out.println("¼ıÀÚ¸¦ ÀÔ·ÂÇØ ÁÖ¼¼¿ä.");
+				System.out.println("ìˆ«ìë¥¼ ì…ë ¥í•´ ì£¼ì„¸ìš”.");
 				inputData = new Scanner(System.in);
 				inputNumber = 0;
 			}

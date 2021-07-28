@@ -8,7 +8,7 @@ public class TestCalc {
 		Scanner scanner = new Scanner(System.in);
 		Calc calc = new Calc();
 
-		System.out.println("ÀÔ·Â: ");
+		System.out.println("ìž…ë ¥: ");
 
 		try {
 			int a = scanner.nextInt();

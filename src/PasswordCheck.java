@@ -11,17 +11,17 @@ public class PasswordCheck {
 		int trynumber = 0;
 
 		for (int i = 0; i < MAX_TRY; i++) {
-			System.out.print("¾ÏÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä: ");
+			System.out.print("ì•”í˜¸ë¥¼ ìž…ë ¥í•˜ì„¸ìš”: ");
 			input = scanner.next();
 			trynumber++;
 
 			if (password.equals(input)) {
-				System.out.println("È¯¿µÇÕ´Ï´Ù");
+				System.out.println("í™˜ì˜í•©ë‹ˆë‹¤");
 				break;
 			} else {
-				System.out.println("¾ÏÈ£°¡ Æ²¸³´Ï´Ù");
+				System.out.println("ì•”í˜¸ê°€ í‹€ë¦½ë‹ˆë‹¤");
 				if(trynumber == MAX_TRY) {
-					System.out.println("Á¢¼ÓÀ» °ÅºÎÇÕ´Ï´Ù");
+					System.out.println("ì ‘ì†ì„ ê±°ë¶€í•©ë‹ˆë‹¤");
 				}
 			}
 		}		

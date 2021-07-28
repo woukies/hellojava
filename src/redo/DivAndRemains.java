@@ -8,12 +8,12 @@ public class DivAndRemains {
 		Scanner scanner = new Scanner(System.in);
 		int number;
 
-		System.out.print("2ÀÚ¸®¼ö Á¤¼ö ÀÔ·Â(10~99)>>");
+		System.out.print("2ìë¦¬ìˆ˜ ì •ìˆ˜ ì…ë ¥(10~99)>>");
 		number = scanner.nextInt();
 		if ((number % 10) == (number / 10)) {
-			System.out.println("Yes! 10ÀÇ ÀÚ¸®¿Í 1ÀÇ ÀÚ¸®°¡ °°½À´Ï´Ù.");
+			System.out.println("Yes! 10ì˜ ìë¦¬ì™€ 1ì˜ ìë¦¬ê°€ ê°™ìŠµë‹ˆë‹¤.");
 		} else {
-			System.out.println("No! 10ÀÇ ÀÚ¸®¿Í 1ÀÇ ÀÚ¸®°¡ ´Ù¸¨´Ï´Ù.");
+			System.out.println("No! 10ì˜ ìë¦¬ì™€ 1ì˜ ìë¦¬ê°€ ë‹¤ë¦…ë‹ˆë‹¤.");
 		}
 
 		scanner.close();

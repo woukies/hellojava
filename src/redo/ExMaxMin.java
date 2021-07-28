@@ -9,7 +9,7 @@ public class ExMaxMin {
 
 		int a, b, c;
 
-		System.out.print("Á¤¼ö 3°³ ÀÔ·Â>>");
+		System.out.print("ì •ìˆ˜ 3ê°œ ì…ë ¥>>");
 		a = scanner.nextInt();
 		b = scanner.nextInt();
 		c = scanner.nextInt();
@@ -51,8 +51,8 @@ public class ExMaxMin {
 			min = c;
 		}
 
-		System.out.println("ÃÖ´ë°ªÀº " + max);
-		System.out.println("ÃÖ¼Ò°ªÀº " + min);
+		System.out.println("ìµœëŒ€ê°’ì€ " + max);
+		System.out.println("ìµœì†Œê°’ì€ " + min);
 
 		scanner.close();
 	}

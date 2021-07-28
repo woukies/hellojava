@@ -18,18 +18,18 @@ class GridLayoutFrame extends JFrame {
 	public GridLayoutFrame() {
 		setTitle("GridLayoutTest");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setLayout(new GridLayout(4, 2, 2, 2)); // ÃÊ°ú½Ã Çà ±âÁØ
+		setLayout(new GridLayout(4, 2, 2, 2)); // ì´ˆê³¼ì‹œ í–‰ ê¸°ì¤€
 		setSize(600, 300);
 
-		add(new JButton("¹öÆ°1"));
-		add(new JButton("¹öÆ°2"));
-		add(new JButton("¹öÆ°3"));
-		add(new JButton("¹öÆ°4"));
-		add(new JButton("¹öÆ°5"));
-		add(new JButton("¹öÆ°6"));
-		add(new JButton("¹öÆ°7"));
-		add(new JButton("¹öÆ°8"));
-		add(new JButton("¹öÆ°9"));
+		add(new JButton("ë²„íŠ¼1"));
+		add(new JButton("ë²„íŠ¼2"));
+		add(new JButton("ë²„íŠ¼3"));
+		add(new JButton("ë²„íŠ¼4"));
+		add(new JButton("ë²„íŠ¼5"));
+		add(new JButton("ë²„íŠ¼6"));
+		add(new JButton("ë²„íŠ¼7"));
+		add(new JButton("ë²„íŠ¼8"));
+		add(new JButton("ë²„íŠ¼9"));
 
 		// pack(); // p316
 		setVisible(true);

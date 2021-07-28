@@ -20,19 +20,19 @@ class ArrayFrame extends JFrame implements ActionListener {
 	JButton button1, button2;
 	JLabel[] labels;
 	int index = 0;
-	String[] string = { "¸¼À½", "ºñ", "Èå¸²", "´«" };
+	String[] string = { "ë§‘ìŒ", "ë¹„", "íë¦¼", "ëˆˆ" };
 
 	ArrayFrame() {
-		setTitle("¶óº§");
+		setTitle("ë¼ë²¨");
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setSize(800, 600);
 
 		panel1 = new JPanel();
-		label = new JLabel("¶óº§");
-		button1 = new JButton("¹öÆ°1");
+		label = new JLabel("ë¼ë²¨");
+		button1 = new JButton("ë²„íŠ¼1");
 		button1.addActionListener(this);
 		button1.setFocusPainted(false);
-		button2 = new JButton("¹öÆ°2");
+		button2 = new JButton("ë²„íŠ¼2");
 		button2.addActionListener(this);
 		button2.setFocusPainted(false);
 		panel1.add(label);

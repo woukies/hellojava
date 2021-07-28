@@ -8,12 +8,12 @@ public class RadioCheckBoxQ {
 
 	public static void main(String[] args) {
 		/*
-		 * ¿µÈ­ Àå¸£ ¼±ÅÃ(ÄÚ¹Ìµğ, ¾×¼Ç, ¼ºÀÎ) ³ªÀÌ ¼±ÅÃ (Ã»¼Ò³â 10.0, ¼ºÀÎ 13.0) ¼ºÀÎ Á¾·ù¸é Ã»¼Ò³â ºñÈ°¼ºÈ­ µğÀúÆ® ¼±ÅÃ °¡°İ ÇÕ°è
+		 * ì˜í™” ì¥ë¥´ ì„ íƒ(ì½”ë¯¸ë””, ì•¡ì…˜, ì„±ì¸) ë‚˜ì´ ì„ íƒ (ì²­ì†Œë…„ 10.0, ì„±ì¸ 13.0) ì„±ì¸ ì¢…ë¥˜ë©´ ì²­ì†Œë…„ ë¹„í™œì„±í™” ë””ì €íŠ¸ ì„ íƒ ê°€ê²© í•©ê³„
 		 */
 
 		JFrame j = new JFrame();
 
-		String[] movies = { "ÄÚ¹Ìµğ", "¾×¼Ç", "¼ºÀÎ" };
+		String[] movies = { "ì½”ë¯¸ë””", "ì•¡ì…˜", "ì„±ì¸" };
 		j.add(new MoviePanel(movies));
 		j.setSize(1000, 1000);
 		j.setVisible(true);
@@ -23,7 +23,7 @@ public class RadioCheckBoxQ {
 }
 
 class MyFrameRCB extends JFrame implements ActionListener {
-	String[] movies = { "ÄÚ¹Ìµğ", "¾×¼Ç", "¼ºÀÎ" };
+	String[] movies = { "ì½”ë¯¸ë””", "ì•¡ì…˜", "ì„±ì¸" };
 
 	public MyFrameRCB() {
 

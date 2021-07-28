@@ -13,16 +13,16 @@ public class SetTest {
 		TreeSet<String> treeSet = new TreeSet<>();
 		HashSet<String> hashSet = new HashSet<>();
 
-		linkedHashSet.add("¾ÆÀÌ½ºÅ©¸²");
-		linkedHashSet.add("Ä¿ÇÇ");
-		linkedHashSet.add("ÃÊÄİ¸´");
-		linkedHashSet.add("»çÀÌ´Ù");
-		linkedHashSet.add("ÄÚÄÚÆÊ");
-		linkedHashSet.add("·¹¾²ºñ");
-		linkedHashSet.add("¿ìÀ¯");
-		linkedHashSet.add("³ìÂ÷");
-		linkedHashSet.add("ÄíÅ°");
-		linkedHashSet.add("ÄÚÄÚÆÊ"); // setÀº Áßº¹ ¾ÈµÊ
+		linkedHashSet.add("ì•„ì´ìŠ¤í¬ë¦¼");
+		linkedHashSet.add("ì»¤í”¼");
+		linkedHashSet.add("ì´ˆì½œë¦¿");
+		linkedHashSet.add("ì‚¬ì´ë‹¤");
+		linkedHashSet.add("ì½”ì½”íŒœ");
+		linkedHashSet.add("ë ˆì“°ë¹„");
+		linkedHashSet.add("ìš°ìœ ");
+		linkedHashSet.add("ë…¹ì°¨");
+		linkedHashSet.add("ì¿ í‚¤");
+		linkedHashSet.add("ì½”ì½”íŒœ"); // setì€ ì¤‘ë³µ ì•ˆë¨
 
 		Iterator<String> i = linkedHashSet.iterator();
 		while (i.hasNext()) {
@@ -31,9 +31,9 @@ public class SetTest {
 			hashSet.add(s);
 		}
 
-		System.out.println("LinkedHashSet(" + linkedHashSet.size() + "): " + linkedHashSet); // ÀÔ·Â ¼ø¼­
-		System.out.println("TreeSet(" + treeSet.size() + "): " + treeSet); // °¡³ª´Ù ¼ø¼­
-		System.out.println("HashSet(" + hashSet.size() + "): " + hashSet); // ÀÏÁ¤ÇÏÁö ¾ÊÀº ¼ø¼­Áö¸¸ ºü¸§
+		System.out.println("LinkedHashSet(" + linkedHashSet.size() + "): " + linkedHashSet); // ì…ë ¥ ìˆœì„œ
+		System.out.println("TreeSet(" + treeSet.size() + "): " + treeSet); // ê°€ë‚˜ë‹¤ ìˆœì„œ
+		System.out.println("HashSet(" + hashSet.size() + "): " + hashSet); // ì¼ì •í•˜ì§€ ì•Šì€ ìˆœì„œì§€ë§Œ ë¹ ë¦„
 
 		Set<String> set1, set2, set3;
 
@@ -41,21 +41,21 @@ public class SetTest {
 		set2 = new HashSet<>();
 		set3 = new HashSet<>();
 
-		set1.add("°¡");
-		set1.add("³ª");
-		set1.add("´Ù");
-		set1.add("¶ó");
-		set1.add("¸¶");
+		set1.add("ê°€");
+		set1.add("ë‚˜");
+		set1.add("ë‹¤");
+		set1.add("ë¼");
+		set1.add("ë§ˆ");
 
-		set2.add("°¡");
-		set2.add("¶ó");
-		set2.add("¸¶");
+		set2.add("ê°€");
+		set2.add("ë¼");
+		set2.add("ë§ˆ");
 
-		set3.add("³ª");
-		set3.add("ÇÏ");
-		set3.add("Â÷");
-		set3.add("¸¶");
-		set3.add("»ç");
+		set3.add("ë‚˜");
+		set3.add("í•˜");
+		set3.add("ì°¨");
+		set3.add("ë§ˆ");
+		set3.add("ì‚¬");
 
 		System.out.println();
 		System.out.printf("%s.containsAll(%s): %s\n", set1, set2, set1.containsAll(set2));

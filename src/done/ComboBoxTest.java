@@ -8,7 +8,7 @@ public class ComboBoxTest extends JFrame implements ActionListener {
 	JLabel label;
 
 	public ComboBoxTest() {
-		setTitle("ÄŞº¸ ¹Ú½º");
+		setTitle("ì½¤ë³´ ë°•ìŠ¤");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setSize(300, 200);
 
@@ -37,7 +37,7 @@ public class ComboBoxTest extends JFrame implements ActionListener {
 		if (icon != null) {
 			label.setText(null);
 		} else {
-			label.setText("ÀÌ¹ÌÁö°¡ ¹ß°ßµÇÁö ¾Ê¾Ò½À´Ï´Ù.");
+			label.setText("ì´ë¯¸ì§€ê°€ ë°œê²¬ë˜ì§€ ì•Šì•˜ìŠµë‹ˆë‹¤.");
 		}
 	}
 

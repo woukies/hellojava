@@ -19,7 +19,7 @@ public class TransKE {
 
 class TransFrame extends JFrame implements ActionListener, KeyListener {
 	final String[] wordEnglish = { "apple", "banana", "chocolate", "dragon" };
-	final String[] wordKorean = { "»ç°ú", "¹Ù³ª³ª", "ÃÊÄİ¸´", "¿ë" };
+	final String[] wordKorean = { "ì‚¬ê³¼", "ë°”ë‚˜ë‚˜", "ì´ˆì½œë¦¿", "ìš©" };
 	boolean validWord = false;
 
 	JPanel textFieldPanel, textAreaPanel, buttonPanel;
@@ -28,7 +28,7 @@ class TransFrame extends JFrame implements ActionListener, KeyListener {
 	JButton okayButton, cancleButton;
 
 	public TransFrame() {
-		setTitle("´Ü¾î º¯È¯±â"); // super("´Ü¾î º¯È¯±â");
+		setTitle("ë‹¨ì–´ ë³€í™˜ê¸°"); // super("ë‹¨ì–´ ë³€í™˜ê¸°");
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 
 		textFieldPanel = new JPanel();
@@ -50,9 +50,9 @@ class TransFrame extends JFrame implements ActionListener, KeyListener {
 
 		buttonPanel = new JPanel();
 
-		okayButton = new JButton("È®ÀÎ");
+		okayButton = new JButton("í™•ì¸");
 		okayButton.addActionListener(this);
-		cancleButton = new JButton("Ãë¼Ò");
+		cancleButton = new JButton("ì·¨ì†Œ");
 		cancleButton.addActionListener(this);
 		buttonPanel.add(okayButton);
 		buttonPanel.add(cancleButton);
@@ -110,11 +110,11 @@ class TransFrame extends JFrame implements ActionListener, KeyListener {
 	}
 
 	@Override
-	public void keyTyped(KeyEvent e) { // ÀÔ·Â ÀÌÈÄ
+	public void keyTyped(KeyEvent e) { // ì…ë ¥ ì´í›„
 	}
 
 	@Override
-	public void keyPressed(KeyEvent e) { // ´©¸£´Â ¼ø°£
+	public void keyPressed(KeyEvent e) { // ëˆ„ë¥´ëŠ” ìˆœê°„
 		int keyCode = e.getKeyCode();
 		if (keyCode == KeyEvent.VK_ENTER) {
 			for (int i = 0; i < wordKorean.length; i++) {
@@ -132,6 +132,6 @@ class TransFrame extends JFrame implements ActionListener, KeyListener {
 	}
 
 	@Override
-	public void keyReleased(KeyEvent e) { // ¶¼´Â ¼ø°£
+	public void keyReleased(KeyEvent e) { // ë–¼ëŠ” ìˆœê°„
 	}
 }

@@ -4,9 +4,9 @@ public class Array2DTest {
 
 	public static void main(String[] args) {
 		String[][] words = { 
-				{ "chair", "ÀÇÀÚ" }, 
-				{ "computer", "ÄÄÇ»ÅÍ" }, 
-				{ "integer", "Á¤¼ö" }
+				{ "chair", "ì˜ì" }, 
+				{ "computer", "ì»´í“¨í„°" }, 
+				{ "integer", "ì •ìˆ˜" }
 		};
 
 		for (int i = 0; i < words.length; i++) {

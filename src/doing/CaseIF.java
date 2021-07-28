@@ -7,22 +7,22 @@ public class CaseIF {
 		Scanner scanner = new Scanner(System.in);
 		int age;
 
-		System.out.print("³ªÀÌ ÀÔ·Â: ");
+		System.out.print("ë‚˜ì´ ìž…ë ¥: ");
 		age = scanner.nextInt();
 
 		if (age > 15) {
-			System.out.println("³ªÀÌ Á¦ÇÑ! ¤²¤²");
+			System.out.println("ë‚˜ì´ ì œí•œ! ã…‚ã…‚");
 		} else {
-			System.out.println("15¼¼ ÀÌÇÏ! ¤·¤·");
+			System.out.println("15ì„¸ ì´í•˜! ã…‡ã…‡");
 		}
 
-		System.out.print("¼ýÀÚ ÀÔ·Â: ");
+		System.out.print("ìˆ«ìž ìž…ë ¥: ");
 		age = scanner.nextInt();
 
 		if (age > 0) {
-			System.out.printf("%d = ¾ç¼ö", age);
+			System.out.printf("%d = ì–‘ìˆ˜", age);
 		} else if (age < 0) {
-			System.out.printf("%d = À½¼ö", age);
+			System.out.printf("%d = ìŒìˆ˜", age);
 		} else {
 			System.out.printf("%d = 0", age);
 		}

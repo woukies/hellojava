@@ -8,12 +8,12 @@ public class ExSumMultiply {
 		Scanner scanner = new Scanner(System.in);
 		int number;
 
-		System.out.print("3ÀÚ¸®¼ö Á¤¼ö ÀÔ·Â(100~999)>>");
+		System.out.print("3ìë¦¬ìˆ˜ ì •ìˆ˜ ì…ë ¥(100~999)>>");
 
 		number = scanner.nextInt();
 
-		System.out.println("100ÀÇ ÀÚ¸®¿Í 10ÀÇ ÀÚ¸®ÀÇ ÇÕÀº " + ((number / 100) + ((number % 100) / 10)));
-		System.out.println("10ÀÇ ÀÚ¸®¿Í 1ÀÇ ÀÚ¸®ÀÇ °öÀº " + (((number % 100) / 10) * (number % 10)));
+		System.out.println("100ì˜ ìë¦¬ì™€ 10ì˜ ìë¦¬ì˜ í•©ì€ " + ((number / 100) + ((number % 100) / 10)));
+		System.out.println("10ì˜ ìë¦¬ì™€ 1ì˜ ìë¦¬ì˜ ê³±ì€ " + (((number % 100) / 10) * (number % 10)));
 		
 		scanner.close();
 	}

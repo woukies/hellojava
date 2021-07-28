@@ -15,7 +15,7 @@ class MyFrameTFT extends JFrame {
  
        public MyFrameTFT() {
              setSize(300, 130);
-             setTitle("Á¦°ö °è»êÇÏ±â");
+             setTitle("ì œê³± ê³„ì‚°í•˜ê¸°");
              setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 
@@ -23,14 +23,14 @@ class MyFrameTFT extends JFrame {
              
 
              JPanel panel = new JPanel();
-             panel.add(new JLabel("¼ıÀÚ ÀÔ·Â: "));
+             panel.add(new JLabel("ìˆ«ì ì…ë ¥: "));
 
              text = new JTextField(15);		
 
              text.addActionListener(listener);	
              panel.add(text);
 
-             panel.add(new JLabel("Á¦°öÇÑ °ª: "));
+             panel.add(new JLabel("ì œê³±í•œ ê°’: "));
 
              result = new JTextField(15);	
              result.setEditable(false);		
@@ -43,7 +43,7 @@ class MyFrameTFT extends JFrame {
              add(panel);
              setVisible(true);
        }
-       // ÅØ½ºÆ® ÇÊµå¿Í ¹öÆ°ÀÇ ¾×¼Ç ÀÌº¥Æ® Ã³¸® 
+       // í…ìŠ¤íŠ¸ í•„ë“œì™€ ë²„íŠ¼ì˜ ì•¡ì…˜ ì´ë²¤íŠ¸ ì²˜ë¦¬ 
        private class ButtonListener implements ActionListener {
              public void actionPerformed(ActionEvent e) {
 

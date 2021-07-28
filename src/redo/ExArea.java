@@ -8,15 +8,15 @@ public class ExArea {
 		int[] num = new int[3];
 		Scanner scanner = new Scanner(System.in);
 
-		System.out.print("Á¤¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À>>");
+		System.out.print("ì •ìˆ˜ë¥¼ ìž…ë ¥í•˜ì‹œì˜¤>>");
 		for (int i = 0; i < num.length; i++) {
 			num[i] = scanner.nextInt();
 		}
 
 		if (num[2] == 0) {
-			System.out.println("»ï°¢ÇüÀÇ ³ÐÀÌ´Â " + (num[0] * num[1]) / 2.0);
+			System.out.println("ì‚¼ê°í˜•ì˜ ë„“ì´ëŠ” " + (num[0] * num[1]) / 2.0);
 		} else {
-			System.out.println("»ç´Ù¸®²ÃÀÇ ³ÐÀÌ´Â " + (num[0] + num[1]) * num[2] / 2.0);
+			System.out.println("ì‚¬ë‹¤ë¦¬ê¼´ì˜ ë„“ì´ëŠ” " + (num[0] + num[1]) * num[2] / 2.0);
 		}
 
 		scanner.close();

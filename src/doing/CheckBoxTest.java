@@ -25,7 +25,7 @@ public class CheckBoxTest extends JPanel implements ItemListener {
 		// static, fruits.length
 		super(new GridLayout(0, 6));
 
-		// Ã¼Å© ¹Ú½º »ı¼º
+		// ì²´í¬ ë°•ìŠ¤ ìƒì„±
 		for (int i = 0; i < fruits.length; i++) {
 			buttons[i] = new JCheckBox(fruits[i]);
 			buttons[i].addItemListener(this);
@@ -44,7 +44,7 @@ public class CheckBoxTest extends JPanel implements ItemListener {
 		}
 	}
 
-	/** Ã¼Å© ¹Ú½ºÀÇ ¾ÆÀÌÅÛ ÀÌº¥Æ®¸¦ Ã³¸®ÇÑ´Ù. */
+	/** ì²´í¬ ë°•ìŠ¤ì˜ ì•„ì´í…œ ì´ë²¤íŠ¸ë¥¼ ì²˜ë¦¬í•œë‹¤. */
 	public void itemStateChanged(ItemEvent e) {
 
 		ImageIcon image = null;

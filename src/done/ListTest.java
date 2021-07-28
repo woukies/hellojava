@@ -14,30 +14,30 @@ public class ListTest extends JFrame {
 	private JTextField selected;
 	private JPanel panel, listPanel;
 	private JList list;
-	private String[] drink = { "Ä¿ÇÇ", "¿ìÀ¯", "¹°", "¼ÒÁÖ", "¸ÆÁÖ", "¸·°É¸®" };
+	private String[] drink = { "ì»¤í”¼", "ìš°ìœ ", "ë¬¼", "ì†Œì£¼", "ë§¥ì£¼", "ë§‰ê±¸ë¦¬" };
 
 	public ListTest() {
-		setTitle("¸®½ºÆ®");
+		setTitle("ë¦¬ìŠ¤íŠ¸");
 		setSize(300, 200);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 		listPanel = new JPanel();
 		panel = new JPanel();
 		list = new JList(drink);
-		// ¸®½ºÆ®¿¡ °æ°è¼±À» ¼³Á¤ÇÑ´Ù.
+		// ë¦¬ìŠ¤íŠ¸ì— ê²½ê³„ì„ ì„ ì„¤ì •í•œë‹¤.
 		// list.setBorder(BorderFactory.createLineBorder(Color.black, 1));
-		// ¸®½ºÆ®¿¡ ½ºÅ©·Ñ¹Ù¸¦ Ãß°¡ÇÑ´Ù.
+		// ë¦¬ìŠ¤íŠ¸ì— ìŠ¤í¬ë¡¤ë°”ë¥¼ ì¶”ê°€í•œë‹¤.
 		JScrollPane scroller = new JScrollPane(list);
 		scroller.setPreferredSize(new Dimension(200, 100));
 
-		// ¸®½ºÆ®ÀÇ ¼±ÅÃ ¸ğµå¸¦ ´ÜÀÏ ¼±ÅÃ ¸ğµå·Î º¯°æ
+		// ë¦¬ìŠ¤íŠ¸ì˜ ì„ íƒ ëª¨ë“œë¥¼ ë‹¨ì¼ ì„ íƒ ëª¨ë“œë¡œ ë³€ê²½
 		list.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 		list.addListSelectionListener(new ListListener());
 
-		label = new JLabel("¼±ÅÃµÈ Ç×¸ñ: ");
+		label = new JLabel("ì„ íƒëœ í•­ëª©: ");
 		selected = new JTextField(10);
 
-		// ÅØ½ºÆ® ÇÊµå¸¦ ÆíÁı ºÒ°¡·Î ¼³Á¤ÇÑ´Ù.
+		// í…ìŠ¤íŠ¸ í•„ë“œë¥¼ í¸ì§‘ ë¶ˆê°€ë¡œ ì„¤ì •í•œë‹¤.
 		selected.setEditable(false);
 
 		listPanel.add(scroller);
@@ -50,10 +50,10 @@ public class ListTest extends JFrame {
 
 	private class ListListener implements ListSelectionListener {
 		public void valueChanged(ListSelectionEvent e) {
-			// ¼±ÅÃµÈ µµ½Ã¸¦ ¾ò´Â´Ù.
+			// ì„ íƒëœ ë„ì‹œë¥¼ ì–»ëŠ”ë‹¤.
 			String selection = (String) list.getSelectedValue(); // list.getSelectedIndex()
 
-			// ¼±ÅÃµÈ µµ½Ã¸¦ ÅØ½ºÆ® ÇÊµå¿¡ ±â·ÏÇÑ´Ù.
+			// ì„ íƒëœ ë„ì‹œë¥¼ í…ìŠ¤íŠ¸ í•„ë“œì— ê¸°ë¡í•œë‹¤.
 			selected.setText(selection);
 		}
 	}

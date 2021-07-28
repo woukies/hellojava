@@ -10,7 +10,7 @@ public class GenericCollectionTest {
 
 		String[] language = { "C++", "Java", "Javascript" };
 
-		System.out.println(ArrayClass.getLast(language)); // ArrayClass.<String>getLast(language) <> »ı·« °¡´É
+		System.out.println(ArrayClass.getLast(language)); // ArrayClass.<String>getLast(language) <> ìƒëµ ê°€ëŠ¥
 
 	}
 

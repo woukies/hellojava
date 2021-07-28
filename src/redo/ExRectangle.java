@@ -9,13 +9,13 @@ public class ExRectangle {
 
 		int num1, num2;
 
-		System.out.print("2°³ÀÇ Á¤¼ö ÀÔ·Â>>");
+		System.out.print("2ê°œì˜ ì •ìˆ˜ ì…ë ¥>>");
 
 		num1 = scanner.nextInt();
 		num2 = scanner.nextInt();
 
-		System.out.println("µÎ ¼ö ÀÇ ÇÕÀº " + (num1 + num2));
-		System.out.println("µÎ ¼ö ÀÇ °öÀº " + (num1 * num2));
+		System.out.println("ë‘ ìˆ˜ ì˜ í•©ì€ " + (num1 + num2));
+		System.out.println("ë‘ ìˆ˜ ì˜ ê³±ì€ " + (num1 * num2));
 
 		scanner.close();
 	}

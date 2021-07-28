@@ -14,9 +14,9 @@ class SnowManPanel extends JPanel {
 		g.setColor(Color.YELLOW);
 		g.fillOval(20, 30, 200, 200);
 		g.setColor(Color.BLACK);
-		g.drawArc(60, 80, 50, 50, 180, -180);  // ¿ÞÂÊ ´«
-		g.drawArc(150, 80, 50, 50, 180, -180); // ¿À¸¥ÂÊ ´«
-		g.drawArc(70, 130, 100, 70, 180, 180);  // ÀÔ
+		g.drawArc(60, 80, 50, 50, 180, -180);  // ì™¼ìª½ ëˆˆ
+		g.drawArc(150, 80, 50, 50, 180, -180); // ì˜¤ë¥¸ìª½ ëˆˆ
+		g.drawArc(70, 130, 100, 70, 180, 180);  // ìž…
 	}
 }
 
@@ -24,7 +24,7 @@ public class SnowManFace extends JFrame {
 	public SnowManFace() {
 		setSize(280, 300);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setTitle("´«»ç¶÷ ¾ó±¼");
+		setTitle("ëˆˆì‚¬ëžŒ ì–¼êµ´");
 		setVisible(true);
 		add(new SnowManPanel());
 	}

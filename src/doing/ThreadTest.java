@@ -90,11 +90,11 @@ class CountDownFrame extends JFrame implements ActionListener {
 					Thread.sleep(1000);
 				} catch (InterruptedException e) {
 					// e.printStackTrace();
-					label.setText("ÁßÁö");
+					label.setText("ì¤‘ì§€");
 					return;
 				}
 			}
-			label.setText("Á¾·á");
+			label.setText("ì¢…ë£Œ");
 		}
 	}
 
@@ -133,15 +133,15 @@ class CountDownFrame extends JFrame implements ActionListener {
 				this.count = Integer.parseInt(inputString);
 			} catch (NumberFormatException exception) {
 				textField.setBackground(new Color(255, 220, 220));
-				label.setText(inputString.length() > 0 ? "¼ıÀÚ" : "ÀÔ·Â");
+				label.setText(inputString.length() > 0 ? "ìˆ«ì" : "ì…ë ¥");
 				return;
 			}
 			if (count <= 0) {
 				textField.setBackground(new Color(255, 220, 220));
-				label.setText("¹üÀ§");
+				label.setText("ë²”ìœ„");
 			} else {
 				textField.setBackground(Color.WHITE);
-				// label.setText("½ÃÀÛ");
+				// label.setText("ì‹œì‘");
 				if (thread != null) {
 					thread.interrupt();
 				}
@@ -159,7 +159,7 @@ class CountDownFrame extends JFrame implements ActionListener {
 }
 
 /////////////////////////////////////////////////////////////////
-//// /?/ ¹öÆÛ ¹è¿­·Î »§ ¿©·¯°³ »ı»êÇÏ¸é¼­ ¼ÒºñÇÏ±â
+//// /?/ ë²„í¼ ë°°ì—´ë¡œ ë¹µ ì—¬ëŸ¬ê°œ ìƒì‚°í•˜ë©´ì„œ ì†Œë¹„í•˜ê¸°
 class CakeBuffer {
 	private int data;
 	private boolean empty = true;
@@ -199,7 +199,7 @@ class ProducerThread implements Runnable {
 	public void run() {
 		for (int i = 0; i < 20; i++) {
 			buffer.put(i);
-			System.out.println("»ı»êÀÚ: " + i + "¹ø ÄÉÀÍÀ» »ı»êÇÏ¿´½À´Ï´Ù.");
+			System.out.println("ìƒì‚°ì: " + i + "ë²ˆ ì¼€ìµì„ ìƒì‚°í•˜ì˜€ìŠµë‹ˆë‹¤.");
 			try {
 				Thread.sleep((int) (Math.random() * 1000));
 			} catch (InterruptedException e) {
@@ -218,7 +218,7 @@ class ConsumerThread implements Runnable {
 	public void run() {
 		for (int i = 0; i < 20; i++) {
 			int data = buffer.get();
-			System.out.println("¼ÒºñÀÚ: " + data + "¹ø ÄÉÀÍÀ» ¼ÒºñÇÏ¿´½À´Ï´Ù.");
+			System.out.println("ì†Œë¹„ì: " + data + "ë²ˆ ì¼€ìµì„ ì†Œë¹„í•˜ì˜€ìŠµë‹ˆë‹¤.");
 			try {
 				Thread.sleep((int) (Math.random() * 100));
 			} catch (InterruptedException e) {
@@ -264,15 +264,15 @@ class BankThread implements Runnable {
 	public void run() {
 		for (int i = 0, money = 0; i < 20; i++) {
 			money = (int) (Math.random() * 10);
-			System.out.printf("°í°´: %d¿ø Ãâ±İ ½Ãµµ\n", money);
+			System.out.printf("ê³ ê°: %dì› ì¶œê¸ˆ ì‹œë„\n", money);
 			buffer.get(money);
-			System.out.printf("°í°´: %d¿ø Ãâ±İ, ÀÜ¾×: %3d(-%d)\n", money, buffer.account(), money);
+			System.out.printf("ê³ ê°: %dì› ì¶œê¸ˆ, ì”ì•¡: %3d(-%d)\n", money, buffer.account(), money);
 			try {
 				Thread.sleep((int) (Math.random() * 1000));
 			} catch (InterruptedException e) {
 			}
 		}
-		System.out.println("°í°´: Ãâ±İ Á¾·á");
+		System.out.println("ê³ ê°: ì¶œê¸ˆ ì¢…ë£Œ");
 	}
 }
 
@@ -286,17 +286,17 @@ class CustomerThread implements Runnable {
 	public void run() {
 		for (int i = 0, money = 0; i < 20; i++) {
 			money = (int) (Math.random() * 10);
-			System.out.printf("ÀºÇà: %d¿ø ÀÔ±İ ½Ãµµ\n", money);
+			System.out.printf("ì€í–‰: %dì› ì…ê¸ˆ ì‹œë„\n", money);
 			buffer.put(money);
-			System.out.printf("ÀºÇà: %d¿ø ÀÔ±İ, ÀÜ¾×: %3d(+%d)\n", money, buffer.account(), money);
+			System.out.printf("ì€í–‰: %dì› ì…ê¸ˆ, ì”ì•¡: %3d(+%d)\n", money, buffer.account(), money);
 			try {
 				Thread.sleep((int) (Math.random() * 1000));
 			} catch (InterruptedException e) {
 			}
 		}
-		System.out.printf("ÀºÇà: %d¿ø ÀÔ±İ ½Ãµµ\n", 1000);
+		System.out.printf("ì€í–‰: %dì› ì…ê¸ˆ ì‹œë„\n", 1000);
 		buffer.put(1000);
-		System.out.printf("ÀºÇà: %d¿ø ÀÔ±İ, ÀÜ¾×: %3d(+%d)\n", 1000, buffer.account(), 1000);
-		System.out.println("ÀºÇà: ÀÔ±İ Á¾·á");
+		System.out.printf("ì€í–‰: %dì› ì…ê¸ˆ, ì”ì•¡: %3d(+%d)\n", 1000, buffer.account(), 1000);
+		System.out.println("ì€í–‰: ì…ê¸ˆ ì¢…ë£Œ");
 	}
 }

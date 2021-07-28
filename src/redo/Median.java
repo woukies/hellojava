@@ -7,7 +7,7 @@ public class Median {
 		Scanner scanner = new Scanner(System.in);
 		int[] num = new int[3];
 
-		System.out.print("Á¤¼ö 3°³ ÀÔ·Â>>");
+		System.out.print("ì •ìˆ˜ 3ê°œ ìž…ë ¥>>");
 		for (int i = 0; i < num.length; i++) {
 			num[i] = scanner.nextInt();
 		}
@@ -39,7 +39,7 @@ public class Median {
 			median = num[0];
 		}
 
-		System.out.println("Áß°£ °ªÀº " + median);
+		System.out.println("ì¤‘ê°„ ê°’ì€ " + median);
 		
 		scanner.close();
 	}

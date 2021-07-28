@@ -10,14 +10,14 @@ public class ArithmeticOperator {
 		int seconds;
 		int calcHour, calcMinute, calcSecond;
 
-		System.out.print("Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä: ");
+		System.out.print("ì •ìˆ˜ë¥¼ ìž…ë ¥í•˜ì„¸ìš”: ");
 		seconds = scanner.nextInt();
 
 		calcSecond = seconds % 60;
 		calcMinute = (seconds / 60) % 60;
 		calcHour = (seconds / 60) / 60;
 
-		System.out.printf("%dÃÊ´Â %d½Ã°£, %dºÐ, %dÃÊÀÔ´Ï´Ù.\n", seconds, calcHour, calcMinute, calcSecond);
+		System.out.printf("%dì´ˆëŠ” %dì‹œê°„, %dë¶„, %dì´ˆìž…ë‹ˆë‹¤.\n", seconds, calcHour, calcMinute, calcSecond);
 
 		scanner.close();
 	}

@@ -17,14 +17,14 @@ public class QuizGame {
 			String s = scanner.next();
 
 			if (answer[q].equals(s)) {
-				System.out.println("Б¤ґд!");
+				System.out.println("м •л‹µ!");
 				score++;
 			} else {
-				System.out.println("їАґд~");
+				System.out.println("м¤л‹µ~");
 			}
 		}
 
-		System.out.printf("> ДыБо Бѕ·б: %dБЎ\n", score);
+		System.out.printf("> нЂґм¦€ мў…лЈЊ: %dм ђ\n", score);
 
 		scanner.close();
 	}

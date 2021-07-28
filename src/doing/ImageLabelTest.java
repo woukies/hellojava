@@ -15,15 +15,15 @@ public class ImageLabelTest extends JFrame implements ActionListener {
 	private JButton button;
 
 	public ImageLabelTest() {
-		setTitle("ÀÌ¹ÌÁö ·¹ÀÌºí");
+		setTitle("ì´ë¯¸ì§€ ë ˆì´ë¸”");
 		setSize(300, 250);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 		panel = new JPanel();
 
-		label = new JLabel("ÀÌ¹ÌÁö¸¦ º¸·Á¸é ¾Æ·¡ ¹öÆ°À» ´©¸£¼¼¿ä");
+		label = new JLabel("ì´ë¯¸ì§€ë¥¼ ë³´ë ¤ë©´ ì•„ë˜ ë²„íŠ¼ì„ ëˆ„ë¥´ì„¸ìš”");
 
-		button = new JButton("ÀÌ¹ÌÁö ·¹ÀÌºí");
+		button = new JButton("ì´ë¯¸ì§€ ë ˆì´ë¸”");
 		ImageIcon icon = new ImageIcon("./res/pixelcar2.png");
 		button.setIcon(icon);
 

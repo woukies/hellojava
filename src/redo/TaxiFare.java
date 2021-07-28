@@ -9,12 +9,12 @@ public class TaxiFare {
 		int income = 0, fare;
 
 		for (int i = 0; i < 10; i++) {
-			System.out.print("¿ä±ÝÀ» ÀÔ·ÂÇÏ¼¼¿ä: ");
+			System.out.print("ìš”ê¸ˆì„ ìž…ë ¥í•˜ì„¸ìš”: ");
 			fare = scanner.nextInt();
 			income += fare;
 		}
 
-		System.out.println("ÃÑ ¼öÀÔ: " + income);
+		System.out.println("ì´ ìˆ˜ìž…: " + income);
 
 		scanner.close();
 	}

@@ -13,9 +13,9 @@ public class ArrayTest {
 		String[] names = new String[STUDENTS];
 
 		for (int i = 0; i < STUDENTS; i++) {
-			System.out.print("¼ºÀû: ");
+			System.out.print("ì„±ì : ");
 			scores[i] = scanner.nextInt();
-			System.out.print("ÀÌ¸§: ");
+			System.out.print("ì´ë¦„: ");
 			names[i] = scanner.next();
 		}
 
@@ -36,9 +36,9 @@ public class ArrayTest {
 			}
 		}
 
-		System.out.println("Æò±Õ: " + total / STUDENTS);
-		System.out.printf("ÃÖ°í: %s(%d)\n", best, max);
-		System.out.printf("ÃÖÀú: %s(%d)\n", worst, min);
+		System.out.println("í‰ê· : " + total / STUDENTS);
+		System.out.printf("ìµœê³ : %s(%d)\n", best, max);
+		System.out.printf("ìµœì €: %s(%d)\n", worst, min);
 
 		System.out.println("> EXIT");
 		scanner.close();

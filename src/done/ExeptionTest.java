@@ -12,16 +12,16 @@ public class ExeptionTest {
 			System.out.println("> try2");
 			if (randomNumber % 3 == 1) {
 				System.out.println("> return");
-				return; // return Àü¿¡ finally ½ÇÇà
+				return; // return ì „ì— finally ì‹¤í–‰
 			}
 			multipleThree.print(randomNumber);
 		} catch (Error e) {
 			e.printStackTrace();
 			System.out.println("> return");
-			return; // return Àü¿¡ finally ½ÇÇà
+			return; // return ì „ì— finally ì‹¤í–‰
 		} catch (Exception e) {
 			e.printStackTrace();
-		} finally { // try-catch ÀÌÈÄ ¹«Á¶°Ç ½ÇÇàµÇ´Â ºÎºĞ ( PrintWriter.out, Scanner.close )
+		} finally { // try-catch ì´í›„ ë¬´ì¡°ê±´ ì‹¤í–‰ë˜ëŠ” ë¶€ë¶„ ( PrintWriter.out, Scanner.close )
 			System.out.println("> finally");
 		}
 
@@ -31,7 +31,7 @@ public class ExeptionTest {
 
 class multipleThreeError extends Error {
 	public multipleThreeError() {
-		super("3ÀÇ ¹è¼ö");
+		super("3ì˜ ë°°ìˆ˜");
 	}
 
 }

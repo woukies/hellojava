@@ -8,17 +8,17 @@ public class ArrayListTest {
 	public static void main(String[] args) {
 		ArrayList<Customer> customers = new ArrayList<Customer>();
 
-		//Customer orange = new Customer("ÁÖÈ²");
+		//Customer orange = new Customer("ì£¼í™©");
 
-		customers.add(new Customer("°ËÁ¤"));
-		customers.add(new Customer("ÇÏ¾ç"));
-		customers.add(new Customer("»¡°­"));
-		customers.add(new Customer("ÁÖÈ²"));
+		customers.add(new Customer("ê²€ì •"));
+		customers.add(new Customer("í•˜ì–‘"));
+		customers.add(new Customer("ë¹¨ê°•"));
+		customers.add(new Customer("ì£¼í™©"));
 		//customers.add(orange);
-		customers.add(new Customer("³ë¶û"));
-		customers.add(new Customer("ÃÊ·Ï"));
-		customers.add(new Customer("ÆÄ¶û"));
-		customers.add(new Customer("º¸¶ó"));
+		customers.add(new Customer("ë…¸ë‘"));
+		customers.add(new Customer("ì´ˆë¡"));
+		customers.add(new Customer("íŒŒë‘"));
+		customers.add(new Customer("ë³´ë¼"));
 
 		// customer.get(1).setPoint(100);
 
@@ -28,7 +28,7 @@ public class ArrayListTest {
 		}
 		System.err.println(Customer.getNumberOfCustomers());
 
-		//// /?/ ¼Ò¸êÀÚ ½ÇÇà 
+		//// /?/ ì†Œë©¸ì ì‹¤í–‰ 
 		try {
 			customers.get(3).finalize();
 			//orange.finalize();
@@ -65,7 +65,7 @@ class Customer {
 		Customer.numberOfCustomers++;
 	}
 
-	//// /?/ ºÒ¾ÈÁ¤ÇÏ´Ù´Â ¼Ò¸êÀÚ¸¦... ½áµµ µÇ´Â°¡?
+	//// /?/ ë¶ˆì•ˆì •í•˜ë‹¤ëŠ” ì†Œë©¸ìë¥¼... ì¨ë„ ë˜ëŠ”ê°€?
 	@Override
 	protected void finalize() throws Throwable {
 		Customer.numberOfCustomers--;
@@ -89,7 +89,7 @@ class Customer {
 	}
 
 	public String getJoinDate() {
-		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy³â MM¿ù ddÀÏ");
+		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyë…„ MMì›” ddì¼");
 		return dateFormat.format(joinDate.getTime());
 	}
 

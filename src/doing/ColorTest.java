@@ -11,7 +11,7 @@ class ColorTestPanel extends JPanel implements ActionListener {
 
 	public ColorTestPanel() {
 		setLayout(new BorderLayout());
-		button = new JButton("»ö»ó º¯°æ");
+		button = new JButton("ìƒ‰ìƒ ë³€ê²½");
 		button.addActionListener(this);
 		add(button, BorderLayout.SOUTH);
 	}

@@ -8,9 +8,9 @@ public class ComputeBalance {
 
 		int purchaseAmount, balance;
 
-		System.out.print("±¸¸Å ±Ý¾×À» ÀÔ·ÂÇÏ¼¼¿ä: ");
+		System.out.print("êµ¬ë§¤ ê¸ˆì•¡ì„ ìž…ë ¥í•˜ì„¸ìš”: ");
 		purchaseAmount = scanner.nextInt();
-		System.out.printf("±¸¸Å ±Ý¾× = %d\n", purchaseAmount);
+		System.out.printf("êµ¬ë§¤ ê¸ˆì•¡ = %d\n", purchaseAmount);
 
 		if (purchaseAmount >= 300000) {
 			balance = purchaseAmount - 30000;
@@ -20,7 +20,7 @@ public class ComputeBalance {
 			balance = purchaseAmount;
 		}
 
-		System.out.printf("Ã»±¸ ±Ý¾× = %d\n", balance);
+		System.out.printf("ì²­êµ¬ ê¸ˆì•¡ = %d\n", balance);
 
 		scanner.close();
 	}

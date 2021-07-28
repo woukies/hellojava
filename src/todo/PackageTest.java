@@ -1,6 +1,6 @@
 package todo;
 
-import static java.lang.Math.*; // Á¤Àû ¼±¾ğ
+import static java.lang.Math.*; // ì •ì  ì„ ì–¸
 
 import java.text.SimpleDateFormat;
 import java.util.Arrays;
@@ -19,7 +19,7 @@ public class PackageTest {
 		long startTime = System.nanoTime();
 
 		for (int i = 0; i < maxSize; i++) {
-			// ÁÖ»çÀ§ ´õºí ³ª¿Ã È®·ü
+			// ì£¼ì‚¬ìœ„ ë”ë¸” ë‚˜ì˜¬ í™•ë¥ 
 			if (new Random().nextInt(6) == new Random().nextInt(6)) {
 				count++;
 			}
@@ -29,10 +29,10 @@ public class PackageTest {
 		System.out.printf("Chance: %.2f%%, tries: %d(%.2fms)\n", ((double) count) / maxSize * 100, maxSize,
 				(double) (endTime - startTime) / (1000 * 1000));
 
-		System.out.println("System Å¬·¡½º ÀÌ¸§: " + System.class.getName());
+		System.out.println("System í´ë˜ìŠ¤ ì´ë¦„: " + System.class.getName());
 
 		int cubeSize = new Random().nextInt(randomRange);
-		System.out.printf("%dcm Á¤À°¸éÃ¼ ºÎÇÇ = %dcm^3\n", cubeSize, (int) pow(cubeSize, 3)); // Á¤Àû ¼±¾ğÇØ¼­ Math.pow ¾È½áµµ µÊ
+		System.out.printf("%dcm ì •ìœ¡ë©´ì²´ ë¶€í”¼ = %dcm^3\n", cubeSize, (int) pow(cubeSize, 3)); // ì •ì  ì„ ì–¸í•´ì„œ Math.pow ì•ˆì¨ë„ ë¨
 
 		int[] array = new int[arraySize];
 		System.out.printf("Array[%d]: ", arraySize);
@@ -60,23 +60,23 @@ public class PackageTest {
 		System.out.println();
 
 		Calendar calendar = Calendar.getInstance();
-		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy³â MM¿ù ddÀÏ a hh½Ã mmºĞ ssÃÊ SSS");
+		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyë…„ MMì›” ddì¼ a hhì‹œ mmë¶„ ssì´ˆ SSS");
 		System.out.println("> " + dateFormat.format(calendar.getTime()));
 
 		System.out.println();
 		calendar.set(2021, 6 - 1, 26);
 		int calendarMonth = calendar.get(Calendar.MONTH);
 
-		//// /?/ ¿äÀÏ ¸ÂÃß·Á¸é?
+		//// /?/ ìš”ì¼ ë§ì¶”ë ¤ë©´?
 
-		System.out.println((calendarMonth + 1) + "¿ù");
+		System.out.println((calendarMonth + 1) + "ì›”");
 		for (int i = 0; i < randomRange; i++) { // calendar.get(Calendar.DAY_OF_MONTH)
 			calendar.add(Calendar.DATE, 1);
 			if (calendarMonth != calendar.get(Calendar.MONTH)) {
 				calendarMonth = calendar.get(Calendar.MONTH);
 				System.out.println();
 				System.out.println();
-				System.out.println((calendarMonth + 1) + "¿ù");
+				System.out.println((calendarMonth + 1) + "ì›”");
 				for (int j = 0; j < (i % 7); j++) {
 					System.out.printf("    ");
 				}
@@ -90,9 +90,9 @@ public class PackageTest {
 		System.out.println();
 		System.out.println();
 
-		//// /?/ Áßº¹À» Á¦°ÅÇÏ·Á¸é?
+		//// /?/ ì¤‘ë³µì„ ì œê±°í•˜ë ¤ë©´?
 
-		String[] fruitString = { "»ç°ú", "¹è", "¹Ù³ª³ª", "ÀÚµÎ", "Âü¿Ü", "»ç°ú", "»ç°ú", "¹Ù³ª³ª" };
+		String[] fruitString = { "ì‚¬ê³¼", "ë°°", "ë°”ë‚˜ë‚˜", "ìë‘", "ì°¸ì™¸", "ì‚¬ê³¼", "ì‚¬ê³¼", "ë°”ë‚˜ë‚˜" };
 		String[] splitString = new String[fruitString.length];
 		Arrays.sort(fruitString);
 		for (int i = 0, j = 0; i < fruitString.length - 1; i++) {
@@ -105,7 +105,7 @@ public class PackageTest {
 		}
 
 		StringTokenizer st = new StringTokenizer(String.join(",", splitString), ",");
-		// element = token, ºóÄ­ ¹«½Ã (nullÀº ¾Æ´Ô)
+		// element = token, ë¹ˆì¹¸ ë¬´ì‹œ (nullì€ ì•„ë‹˜)
 
 		while (st.hasMoreTokens()) {
 			System.out.println("countTokens() = " + st.countTokens() + ", nextToken() = " + st.nextToken());

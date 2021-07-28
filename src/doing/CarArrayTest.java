@@ -7,7 +7,7 @@ public class CarArrayTest {
 		final int NUM_CARS = 5;
 		Car[] cars = new Car[NUM_CARS];
 
-//		¾È µÊ!!		
+//		ì•ˆ ë¨!!		
 //		for (Car car : cars) {
 //			car = new Car("White", (int) (Math.random() * 100), (int) (Math.random() * 10));
 //		}

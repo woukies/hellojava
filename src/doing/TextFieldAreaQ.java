@@ -10,9 +10,9 @@ import java.awt.*;
 public class TextFieldAreaQ {
 
 	public static void main(String[] args) throws Exception {
-		// ³¯Â¥ ÀÔ·Â Æ÷¸Ë ÅØ½ºÆ® ÇÊµå
-		// ±Ý¾× ÀÍ·Æ ÅØ½ºÆ® ¿µ¿ª
-		// -> ¹öÆ° ´©¸£¸é 3³â µÚ ¿¹±Ý ÀÌÀÚ Ãâ·Â(¿¬¸® 1.5%)
+		// ë‚ ì§œ ìž…ë ¥ í¬ë§· í…ìŠ¤íŠ¸ í•„ë“œ
+		// ê¸ˆì•¡ ìµë µ í…ìŠ¤íŠ¸ ì˜ì—­
+		// -> ë²„íŠ¼ ëˆ„ë¥´ë©´ 3ë…„ ë’¤ ì˜ˆê¸ˆ ì´ìž ì¶œë ¥(ì—°ë¦¬ 1.5%)
 
 		new TFABankFrame();
 	}

@@ -10,9 +10,9 @@ public class NestedIf {
 		int grade, score;
 		boolean result;
 
-		System.out.print("Á¡¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä(0~100): ");
+		System.out.print("ì ìˆ˜ë¥¼ ìž…ë ¥í•˜ì„¸ìš”(0~100): ");
 		score = scanner.nextInt();
-		System.out.print("ÇÐ³âÀ» ÀÔ·ÂÇÏ¼¼¿ä(1~4): ");
+		System.out.print("í•™ë…„ì„ ìž…ë ¥í•˜ì„¸ìš”(1~4): ");
 		grade = scanner.nextInt();
 
 		if (score >= 60) {
@@ -24,7 +24,7 @@ public class NestedIf {
 			result = false;
 		}
 
-		System.out.println(result ? "ÇÕ°Ý!" : "ºÒÇÕ°Ý!");
+		System.out.println(result ? "í•©ê²©!" : "ë¶ˆí•©ê²©!");
 
 		scanner.close();
 	}

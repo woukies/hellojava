@@ -6,8 +6,8 @@ import java.util.Scanner;
 public class _ReviewQ1 {
 
 	public static void main(String[] args) {
-		// ¼ıÀÚ 5°³ ÀÔ·Â -> ÇÕ°è, Æò±Õ, ÃÖ´ë°ª, ÃÖ¼Ò°ª
-		// ¹è¿­ µ¿Àû ... ½áº¸±â
+		// ìˆ«ì 5ê°œ ì…ë ¥ -> í•©ê³„, í‰ê· , ìµœëŒ€ê°’, ìµœì†Œê°’
+		// ë°°ì—´ ë™ì  ... ì¨ë³´ê¸°
 
 		Scanner scanner = new Scanner(System.in);
 

@@ -17,29 +17,29 @@ public class SliderTest extends JFrame implements ChangeListener {
 	public SliderTest() {
 		JPanel panel;
 
-		setTitle("½½¶óÀÌ´õ Å×½ºÆ®");
+		setTitle("ìŠ¬ë¼ì´ë” í…ŒìŠ¤íŠ¸");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setSize(500, 800);
 
 		panel = new JPanel();
-		JLabel label = new JLabel("½½¶óÀÌ´õ¸¦ ¿òÁ÷¿©º¸¼¼¿ä", JLabel.CENTER);
+		JLabel label = new JLabel("ìŠ¬ë¼ì´ë”ë¥¼ ì›€ì§ì—¬ë³´ì„¸ìš”", JLabel.CENTER);
 		label.setAlignmentX(Component.CENTER_ALIGNMENT);
 		panel.add(label);
 
 		slider1 = new JSlider(0, 50, INIT_VALUE);
-		slider1.setMajorTickSpacing(10); // Å« ´«±İ °£°İ
-		slider1.setMinorTickSpacing(1); // ÀÛÀº ´«±İ °£°İ
-		slider1.setPaintTicks(true); // ´«±İÀ» Ç¥½ÃÇÑ´Ù.
-		slider1.setPaintLabels(true); // °ªÀ» ·¹ÀÌºí·Î Ç¥½ÃÇÑ´Ù.
-		slider1.addChangeListener(this); // ÀÌº¥Æ® ¸®½º³Ê¸¦ ºÙÀÎ´Ù.
+		slider1.setMajorTickSpacing(10); // í° ëˆˆê¸ˆ ê°„ê²©
+		slider1.setMinorTickSpacing(1); // ì‘ì€ ëˆˆê¸ˆ ê°„ê²©
+		slider1.setPaintTicks(true); // ëˆˆê¸ˆì„ í‘œì‹œí•œë‹¤.
+		slider1.setPaintLabels(true); // ê°’ì„ ë ˆì´ë¸”ë¡œ í‘œì‹œí•œë‹¤.
+		slider1.addChangeListener(this); // ì´ë²¤íŠ¸ ë¦¬ìŠ¤ë„ˆë¥¼ ë¶™ì¸ë‹¤.
 		panel.add(slider1);
 
 		slider2 = new JSlider(0, 50, INIT_VALUE);
-		slider2.setMajorTickSpacing(10); // Å« ´«±İ °£°İ
-		slider2.setMinorTickSpacing(1); // ÀÛÀº ´«±İ °£°İ
-		slider2.setPaintTicks(true); // ´«±İÀ» Ç¥½ÃÇÑ´Ù.
-		slider2.setPaintLabels(true); // °ªÀ» ·¹ÀÌºí·Î Ç¥½ÃÇÑ´Ù.
-		slider2.addChangeListener(this); // ÀÌº¥Æ® ¸®½º³Ê¸¦ ºÙÀÎ´Ù.
+		slider2.setMajorTickSpacing(10); // í° ëˆˆê¸ˆ ê°„ê²©
+		slider2.setMinorTickSpacing(1); // ì‘ì€ ëˆˆê¸ˆ ê°„ê²©
+		slider2.setPaintTicks(true); // ëˆˆê¸ˆì„ í‘œì‹œí•œë‹¤.
+		slider2.setPaintLabels(true); // ê°’ì„ ë ˆì´ë¸”ë¡œ í‘œì‹œí•œë‹¤.
+		slider2.addChangeListener(this); // ì´ë²¤íŠ¸ ë¦¬ìŠ¤ë„ˆë¥¼ ë¶™ì¸ë‹¤.
 		panel.add(slider2);
 
 		button = new JButton("");

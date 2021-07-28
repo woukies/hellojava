@@ -9,20 +9,20 @@ public class ExStock {
 
 		int dollar, kospi;
 
-		System.out.print("ÄÚ½ºÇÇ Áö¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä(1800~2500): ");
+		System.out.print("ì½”ìŠ¤í”¼ ì§€ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”(1800~2500): ");
 		kospi = scanner.nextInt();
-		System.out.print("È¯À²À» ÀÔ·ÂÇÏ¼¼¿ä(1100~1200): ");
+		System.out.print("í™˜ìœ¨ì„ ì…ë ¥í•˜ì„¸ìš”(1100~1200): ");
 		dollar = scanner.nextInt();
 		if (kospi >= 2300) {
-			System.out.println("»ó½ÂÀå");
+			System.out.println("ìƒìŠ¹ì¥");
 		} else if (kospi >= 2000) {
 			if (dollar >= 1150 && kospi >= 2200) {
-				System.out.println("»ó½ÂÀå");
+				System.out.println("ìƒìŠ¹ì¥");
 			} else {
-				System.out.println("È¾º¸Àå");
+				System.out.println("íš¡ë³´ì¥");
 			}
 		} else {
-			System.out.println("ÇÏ¶ôÀå");
+			System.out.println("í•˜ë½ì¥");
 		}
 
 		scanner.close();

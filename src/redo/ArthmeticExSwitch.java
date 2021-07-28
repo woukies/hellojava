@@ -10,7 +10,7 @@ public class ArthmeticExSwitch {
 		int a, b, result = 0;
 		String operand;
 
-		System.out.print("¿¬»ê>>");
+		System.out.print("ì—°ì‚°>>");
 		a = scanner.nextInt();
 		operand = scanner.next();
 		b = scanner.nextInt();
@@ -27,7 +27,7 @@ public class ArthmeticExSwitch {
 			break;
 		case "/":
 			if (b == 0) {
-				System.out.println("0À¸·Î ³ª´­ ¼ö ¾ø½À´Ï´Ù.");
+				System.out.println("0ìœ¼ë¡œ ë‚˜ëˆŒ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
 
 				scanner.close();
 				return;
@@ -35,13 +35,13 @@ public class ArthmeticExSwitch {
 			result = a / b;
 			break;
 		default:
-			System.out.println("¿¬»êÀÚ°¡ ¿Ã¹Ù¸£Áö ¾Ê½À´Ï´Ù.");
+			System.out.println("ì—°ì‚°ìê°€ ì˜¬ë°”ë¥´ì§€ ì•ŠìŠµë‹ˆë‹¤.");
 
 			scanner.close();
 			return;
 		}
 
-		System.out.printf("%d%s%dÀÇ °è»ê °á°ú´Â %d\n", a, operand, b, result);
+		System.out.printf("%d%s%dì˜ ê³„ì‚° ê²°ê³¼ëŠ” %d\n", a, operand, b, result);
 
 		scanner.close();
 	}

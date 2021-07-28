@@ -9,32 +9,32 @@ public class SeasonExSwitch {
 		int month;
 		String season;
 
-		System.out.print("´ŞÀ» ÀÔ·ÂÇÏ¼¼¿ä(1~12)>>");
+		System.out.print("ë‹¬ì„ ì…ë ¥í•˜ì„¸ìš”(1~12)>>");
 		month = scanner.nextInt();
 
 		switch (month) {
 		case 3:
 		case 4:
 		case 5:
-			season = "º½";
+			season = "ë´„";
 			break;
 		case 6:
 		case 7:
 		case 8:
-			season = "¿©¸§";
+			season = "ì—¬ë¦„";
 			break;
 		case 9:
 		case 10:
 		case 11:
-			season = "°¡À»";
+			season = "ê°€ì„";
 			break;
 		case 12:
 		case 1:
 		case 2:
-			season = "°Ü¿ï";
+			season = "ê²¨ìš¸";
 			break;
 		default:
-			season = "Àß¸ø ÀÔ·Â";
+			season = "ì˜ëª» ì…ë ¥";
 			break;
 		}
 

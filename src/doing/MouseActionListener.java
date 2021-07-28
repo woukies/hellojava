@@ -12,7 +12,7 @@ import javax.swing.*;
 public class MouseActionListener {
 
 	public static void main(String[] args) {
-		// ÀÌ¹ÌÁö¸¦ µå·¡±×ÇÏ¿© ¿òÁ÷ÀÌ±â, ¿£ÅÍ ´©¸£¸é ÀÌ¹ÌÁö ¼û±è ÀüÈ¯
+		// ì´ë¯¸ì§€ë¥¼ ë“œë˜ê·¸í•˜ì—¬ ì›€ì§ì´ê¸°, ì—”í„° ëˆ„ë¥´ë©´ ì´ë¯¸ì§€ ìˆ¨ê¹€ ì „í™˜
 		JFrame f = new JFrame();
 		f.add(new MousePanel());
 		f.setSize(1000, 1000);

@@ -14,37 +14,37 @@ public class SpinnerTest extends JFrame implements ActionListener {
 	JLabel label;
 
 	public SpinnerTest() {
-		setTitle("½ºÇÇ³Ê Å×½ºÆ®");
+		setTitle("ìŠ¤í”¼ë„ˆ í…ŒìŠ¤íŠ¸");
 		setSize(500, 100);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 		panel = new JPanel();
 
-		// List Model Å×½ºÆ®
-		String[] items = { "¼Ò¼³", "ÀâÁö", "Àü°ø¼­Àû", "Ãë¹Ì" };
+		// List Model í…ŒìŠ¤íŠ¸
+		String[] items = { "ì†Œì„¤", "ì¡ì§€", "ì „ê³µì„œì ", "ì·¨ë¯¸" };
 		SpinnerListModel listModel = new SpinnerListModel(items);
 		spinner = new JSpinner(listModel);
 		panel.add(spinner);
 
-		// Number Model Å×½ºÆ®
+		// Number Model í…ŒìŠ¤íŠ¸
 		SpinnerModel numberModel = new SpinnerNumberModel(1, 0, 100, 4);
 		spinner = new JSpinner(numberModel);
 		panel.add(spinner);
 
-		// Date Model Å×½ºÆ®
+		// Date Model í…ŒìŠ¤íŠ¸
 		Calendar calendar = Calendar.getInstance();
-		Date value = calendar.getTime(); // ÇöÀç ³¯Â¥
-		calendar.add(Calendar.YEAR, -50); // ÇöÀç°ªº¸´Ù -50³â Áõ°¡
+		Date value = calendar.getTime(); // í˜„ì¬ ë‚ ì§œ
+		calendar.add(Calendar.YEAR, -50); // í˜„ì¬ê°’ë³´ë‹¤ -50ë…„ ì¦ê°€
 		Date start = calendar.getTime();
-		calendar.add(Calendar.YEAR, 100); // ÁÖÀÇ +50ÇÏ¸é ÇöÀç ³¯Â¥°¡ µÊ
+		calendar.add(Calendar.YEAR, 100); // ì£¼ì˜ +50í•˜ë©´ í˜„ì¬ ë‚ ì§œê°€ ë¨
 		Date end = calendar.getTime();
 		SpinnerDateModel dateModel = new SpinnerDateModel(value, start, end, Calendar.YEAR);
 		spinner = new JSpinner(dateModel);
-		// ³¯Â¥¸¦ ÆíÁıÇÒ ¼ö ÀÖ´Â ÆíÁı±â¸¦ ÁöÁ¤ÇÑ´Ù.
-		spinner.setEditor(new JSpinner.DateEditor(spinner, "yyyy³â MM¿ù ddÀÏ"));
+		// ë‚ ì§œë¥¼ í¸ì§‘í•  ìˆ˜ ìˆëŠ” í¸ì§‘ê¸°ë¥¼ ì§€ì •í•œë‹¤.
+		spinner.setEditor(new JSpinner.DateEditor(spinner, "yyyyë…„ MMì›” ddì¼"));
 		panel.add(spinner);
 
-		button = new JButton("³¯Â¥ Ãâ·Â");
+		button = new JButton("ë‚ ì§œ ì¶œë ¥");
 		button.addActionListener(this);
 		panel.add(button);
 
@@ -62,7 +62,7 @@ public class SpinnerTest extends JFrame implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == button) {
-			SimpleDateFormat formatDate = new SimpleDateFormat("yyyy³â MM¿ù ddÀÏÀ» ¼±ÅÃÇÏ¿´½À´Ï´Ù.");
+			SimpleDateFormat formatDate = new SimpleDateFormat("yyyyë…„ MMì›” ddì¼ì„ ì„ íƒí•˜ì˜€ìŠµë‹ˆë‹¤.");
 			label.setText(formatDate.format(spinner.getValue()));
 		}
 

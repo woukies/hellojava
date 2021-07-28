@@ -9,18 +9,18 @@ public class SeasonExIf {
 		int month;
 		String season;
 
-		System.out.print("´ÞÀ» ÀÔ·ÂÇÏ¼¼¿ä(1~12)>>");
+		System.out.print("ë‹¬ì„ ìž…ë ¥í•˜ì„¸ìš”(1~12)>>");
 		month = scanner.nextInt();
 		if (3 <= month && month <= 5) {
-			season = "º½";
+			season = "ë´„";
 		} else if (6 <= month && month <= 8) {
-			season = "¿©¸§";
+			season = "ì—¬ë¦„";
 		} else if (9 <= month && month <= 11) {
-			season = "°¡À»";
+			season = "ê°€ì„";
 		} else if (12 == month || (1 <= month && month <= 2)) {
-			season = "°Ü¿ï";
+			season = "ê²¨ìš¸";
 		} else {
-			season = "Àß¸ø ÀÔ·Â";
+			season = "ìž˜ëª» ìž…ë ¥";
 		}
 
 		System.out.println(season);

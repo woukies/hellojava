@@ -23,7 +23,7 @@ class CardLayoutFrame extends JFrame implements ActionListener {
 		addButton("<", panel);
 		addButton(">", panel);
 		addButton(">>", panel);
-		addButton("Á¾·á", panel);
+		addButton("ì¢…ë£Œ", panel);
 		add(panel, "South");
 		cards = new Cards();
 		add(cards, "Center");
@@ -43,13 +43,13 @@ class CardLayoutFrame extends JFrame implements ActionListener {
 			layout = new CardLayout(2, 2);
 			setLayout(layout);
 			for (int i = 1; i <= 10; i++) {
-				add(new JButton("ÇöÀç Ä«µåÀÇ ¹øÈ£´Â " + i + "ÀÔ´Ï´Ù"), "Center");
+				add(new JButton("í˜„ìž¬ ì¹´ë“œì˜ ë²ˆí˜¸ëŠ” " + i + "ìž…ë‹ˆë‹¤"), "Center");
 			}
 		}
 	}
 
 	public void actionPerformed(ActionEvent e) {
-		if (e.getActionCommand().equals("Á¾·á")) {
+		if (e.getActionCommand().equals("ì¢…ë£Œ")) {
 			System.exit(0);
 		} else if (e.getActionCommand().equals("<<")) {
 			cards.layout.first(cards);

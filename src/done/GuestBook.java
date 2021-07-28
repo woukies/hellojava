@@ -23,16 +23,16 @@ class MyFrame extends JFrame implements ActionListener {
 	JPanel p2;
 
 	public MyFrame() {
-		setTitle("¹æ¸í·Ï");
+		setTitle("ë°©ëª…ë¡");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setSize(500, 800);
 
-		JLabel l1 = new JLabel("³»¿ë: ");
+		JLabel l1 = new JLabel("ë‚´ìš©: ");
 		textField = new JTextField(15);
 		textField.addActionListener(this);
 		ok = new JButton("OK");
 		ok.addActionListener(this);
-		sum = new JLabel("0¸í");
+		sum = new JLabel("0ëª…");
 
 		JPanel p1 = new JPanel();
 		p2 = new JPanel();
@@ -55,13 +55,13 @@ class MyFrame extends JFrame implements ActionListener {
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		if (e.getSource() == ok || e.getSource() == textField) { // ¿£ÅÍµµ µÇ³×..
+		if (e.getSource() == ok || e.getSource() == textField) { // ì—”í„°ë„ ë˜ë„¤..
 			if (count >= SIZE) {
 				return;
 			}
 			letters[count] = new JLabel(textField.getText());
 			p2.add(letters[count++]);
-			sum.setText(count + "¸í");
+			sum.setText(count + "ëª…");
 		}
 	}
 }

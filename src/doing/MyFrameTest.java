@@ -29,11 +29,11 @@ class FrameTestFrame extends JFrame {
 		label.setText("Hello, World");
 		MyButton button1 = new MyButton();
 		MyButton button2 = new MyButton();
-		JButton button3 = new JButton("¹öÆ°3");
+		JButton button3 = new JButton("ë²„íŠ¼3");
 		JButton button4 = new JButton();
-		button1.setText("¹öÆ°1");
-		button2.setText("¹öÆ°2");
-		button4.setText("¹öÆ°4");
+		button1.setText("ë²„íŠ¼1");
+		button2.setText("ë²„íŠ¼2");
+		button4.setText("ë²„íŠ¼4");
 		button2.setEnabled(false);
 
 		JPanel panel = new JPanel();

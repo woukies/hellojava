@@ -9,7 +9,7 @@ public class IsTriangle {
 		int[] triangle = new int[3];
 		Scanner scanner = new Scanner(System.in);
 
-		System.out.print("Á¤¼ö 3°³¸¦ ÀÔ·ÂÇÏ½Ã¿À>>");
+		System.out.print("ì •ìˆ˜ 3ê°œë¥¼ ìž…ë ¥í•˜ì‹œì˜¤>>");
 		for (int i = 0; i < triangle.length; i++) {
 			triangle[i] = scanner.nextInt();
 		}
@@ -22,9 +22,9 @@ public class IsTriangle {
 
 		if ((triangle[0] + triangle[1]) <= triangle[2] || (triangle[0] + triangle[2]) <= triangle[1]
 				|| (triangle[1] + triangle[2]) <= triangle[0]) {
-			System.out.println("»ï°¢ÇüÀÌ ¾ÈµË´Ï´Ù");
+			System.out.println("ì‚¼ê°í˜•ì´ ì•ˆë©ë‹ˆë‹¤");
 		} else {
-			System.out.println("»ï°¢ÇüÀÌ µË´Ï´Ù");
+			System.out.println("ì‚¼ê°í˜•ì´ ë©ë‹ˆë‹¤");
 		}
 		scanner.close();
 	}
