@@ -7,15 +7,15 @@ public class CalculateCone {
 
 		double radius, height, volume;
 
-		System.out.print("ì›ë¿” ë°‘ì˜ ì›ì˜ ë°˜ì§€ë¦„ì„ ì…ë ¥í•˜ì„¸ìš”: ");
+		System.out.print("¿ø»Ô ¹ØÀÇ ¿øÀÇ ¹İÁö¸§À» ÀÔ·ÂÇÏ¼¼¿ä: ");
 		radius = scan.nextDouble();
-		System.out.print("ì›ë¿”ì˜ ë†’ì´ë¥¼ ì…ë ¥í•˜ì„¸ìš”: ");
+		System.out.print("¿ø»ÔÀÇ ³ôÀÌ¸¦ ÀÔ·ÂÇÏ¼¼¿ä: ");
 		height = scan.nextDouble();
 		
 		volume = radius * radius * Math.PI * height / 3;
-		System.out.println("ì›ë¿” ë°‘ì˜ ì›ì˜ ë°˜ì§€ë¦„: " + radius);
-		System.out.println("ì›ë¿”ì˜ ë†’ì´: " + height);
-		System.out.println("ì›ë¿”ì˜ ë¶€í”¼: " + volume);
+		System.out.println("¿ø»Ô ¹ØÀÇ ¿øÀÇ ¹İÁö¸§: " + radius);
+		System.out.println("¿ø»ÔÀÇ ³ôÀÌ: " + height);
+		System.out.println("¿ø»ÔÀÇ ºÎÇÇ: " + volume);
 		
 		scan.close();
 	}
