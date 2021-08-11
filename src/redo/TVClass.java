@@ -1,11 +1,11 @@
 package redo;
 
-public class TV {
+public class TVClass {
 	private String manufacturer;
 	private int year;
 	private int size;
 
-	TV(String manufacturer, int year, int inch) {
+	TVClass(String manufacturer, int year, int inch) {
 		this.manufacturer = manufacturer;
 		this.year = year;
 		this.size = inch;
@@ -18,7 +18,7 @@ public class TV {
 	}
 
 	public static void main(String[] args) {
-		TV myTV = new TV("LG", 2017, 32);
+		TVClass myTV = new TVClass("LG", 2017, 32);
 		myTV.show();
 	}
 
